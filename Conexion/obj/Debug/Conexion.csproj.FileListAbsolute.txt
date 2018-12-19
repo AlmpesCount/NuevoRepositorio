@@ -1,0 +1,98 @@
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.pdb
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.pdb
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+E:\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll.config
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll.config
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.xml
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.xml
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll.config
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll.config
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll.config
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll.config
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Conexion.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\Entidades.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Debug\Conexion.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Conexion.dll.config
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Conexion.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Conexion.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Entidades.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\EntityFramework.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Entidades.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\EntityFramework.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Debug\Conexion.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Debug\Conexion.pdb

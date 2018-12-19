@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Reporte 2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+    </li>
+    <li class="breadcrumb-item active">Tables</li>
+</ol>
+<!-- DataTables Example -->
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Informe de Reporte NRO2
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            @Html.Partial("ConsultaReportePartial")
+        </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+</div>
+<p class="small text-center text-muted my-5">
+    <em>More table examples coming soon...</em>
+</p>
+
+<script src="~/Assets/jqgrid/js/jquery-1.11.0.min.js"></script>
+<script src="~/Assets/jqgrid/js/jquery.jqGrid.min.js"></script>
+<script src="~/Assets/jqgrid/js/i18n/grid.locale-es.js"></script>
+<script src="~/Scripts/jquery-ui-1.10.4.min.js"></script>
+<link href="~/Assets/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+
+
+<script type="text/javascript">
+    $("#grid").jqGrid({
+        url: "/ConsultaReporte/Reporte2Lists",
+        datatype: 'json',
+        mtype: 'Get',
+        colNames: ['FRecep', 'Zona', 'NroVenta', 'NroVenValida',
+                   'BBDD', 'RecorridoReal', 'CETReal',
+                    'Recorrido', 'CET', 'Indecopi', 'RetiroLead'],
+        colModel: [
+        { name: 'FRecep', index: 'FRecep', width: 100, align: 'center', formatter: 'date', formatoptions: { newformat: 'd/m/Y' }, datefmt: 'Y-M-d' },
+        { name: 'Zona', index: 'Zona', width: 100, align: 'center' },
+        { name: 'NroVenta', index: 'NroVenta', width: 100, align: 'center' },
+        { name: 'NroVenValida', index: 'NroVenValida', width: 100, align: 'center' },
+        { name: 'BBDD', index: 'BBDD', width: 100, align: 'center' },
+        { name: 'RecorridoReal', index: 'RecorridoReal', width: 100, align: 'center' },
+        { name: 'CETReal', index: 'CETReal', width: 100, align: 'center' },
+        { name: 'Recorrido', index: 'Recorrido', width: 100, align: 'center' },
+        { name: 'CET', index: 'CET', width: 100, align: 'center' },
+        { name: 'Indecopi', index: 'Indecopi', width: 100, align: 'center' },
+        { name: 'RetiroLead', index: 'RetiroLead', width: 100, align: 'center' }
+        ],
+        height: '400',
+        viewrecords: true,
+        loadonce: true,
+        emptyrecords: 'No records to display',
+        jsonReader: {
+            root: "rows",
+            page: "page",
+            total: "total",
+            records: "records",
+            repeatitems: false,
+            Id: "0"
+        },
+        multiselect: false
+    });
+
+</script>
+
+
+

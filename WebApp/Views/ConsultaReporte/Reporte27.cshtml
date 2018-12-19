@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Reporte 27";
+}
+<div>
+    @Html.Partial("ConsultaReportePartial")
+</div>
+
+<script src="~/Assets/jqgrid/js/jquery-1.11.0.min.js"></script>
+<script src="~/Assets/jqgrid/js/jquery.jqGrid.min.js"></script>
+<script src="~/Assets/jqgrid/js/i18n/grid.locale-es.js"></script>
+<script src="~/Scripts/jquery-ui-1.10.4.min.js"></script>
+<link href="~/Assets/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+
+<script type="text/javascript">
+    $(function () {
+        $("#grid").jqGrid({
+            url: "/ConsultaReporte/Reporte27Lists",
+            datatype: 'json',
+            mtype: 'Get',
+            colNames: ['Periodo', 'N_Doc', 'Telefono', 'F_Recep',
+                       'F_Gestion', 'TipoCel', 'GrupoCel', 'Tipo',
+                        'Descripcion'],
+            colModel: [
+            { name: 'Periodo', index: 'Periodo', width: 15 },
+            { name: 'N_Doc', index: 'N_Doc', width: 15 },
+            { name: 'Telefono', index: 'Telefono', width: 15 },
+            { name: 'F_Recep', index: 'F_Recep', width: 15, formatter: 'date', formatoptions: { newformat: 'm/d/Y' }, datefmt: 'd-M-Y' },
+            { name: 'F_Gestion', index: 'F_Gestion', width: 15, formatter: 'date', formatoptions: { newformat: 'm/d/Y' }, datefmt: 'd-M-Y' },
+            { name: 'TipoCel', index: 'TipoCel', width: 15 },
+            { name: 'GrupoCel', index: 'GrupoCel', width: 15 },
+            { name: 'Tipo', index: 'Tipo', width: 15 },
+            { name: 'Descripcion', index: 'Descripcion', width: 15 }
+            ],
+            pager: jQuery('#pager'),
+            rowNum: 10,
+            rowList: [10, 150, 300],
+            height: '100%',
+            viewrecords: true,
+            caption: 'Todo List',
+            loadonce: false,
+            emptyrecords: 'No records to display',
+            jsonReader: {
+                root: "rows",
+                page: "page",
+                total: "total",
+                records: "records",
+                repeatitems: false,
+                Id: "0"
+            },
+            autowidth: true,
+            multiselect: false
+        });
+    });
+</script>
+

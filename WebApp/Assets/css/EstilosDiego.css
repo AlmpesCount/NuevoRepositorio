@@ -1,0 +1,4 @@
+/*Este estilo sirve para la tabla JQGrid del ConsultaReportePartial*/
+.center #grid {
+    margin: auto;
+}

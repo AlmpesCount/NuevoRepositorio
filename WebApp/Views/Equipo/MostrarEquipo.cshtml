@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Inventario de Equipos";
+    if (Session["userID"] == null)
+    {
+        Response.Redirect("~/Views/Login/Login.cshtml");
+    }
+}
+
+<script>
+    $(function () {
+        $("#jqGrid").jqGrid({
+            url: "/equipo/mostrarequipo",
+            datatype: 'json',
+            mtype: 'Get',
+            colNames: ['COD_UNI_CAB', 'SIS_OPERATIVO',
+                      'MEMORIA_RAM', 'PROCESADOR',
+                      'DIRECCION_IP', 'PUERTO_USB',
+                      'FECHA_COMPRA', 'FECHA_REVISION',
+                      'AREA', 'ESTADO', 'MODIFICACIONES'],
+            colModel: [
+            { key: true, name: 'COD_UNI_CAB', index: 'COD_UNI_CAB', hidden: true },
+			{ name: 'SIS_OPERATIVO', index: 'SIS_OPERATIVO', width: 30 },
+            { name: 'MEMORIA_RAM', index: 'MEMORIA_RAM', width: 30 },
+            { name: 'PROCESADOR', index: 'PROCESADOR', width: 30 },
+            { name: 'DIRECCION_IP', index: 'DIRECCION_IP', width: 30 },
+            { name: 'PUERTO_USB', index: 'PUERTO_USB', width: 30 },
+            { name: 'FECHA_COMPRA', index: 'FECHA_COMPRA', width: 30 },
+            { name: 'FECHA_REVISION', index: 'FECHA_REVISION', width: 30 },
+            { name: 'AREA', index: 'AREA', width: 30 },
+            { name: 'ESTADO', index: 'ESTADO', width: 30 },
+            { name: 'MODIFICACIONES', index: 'MODIFICACIONES', width: 30 }
+            ],
+            pager: jQuery('#jqControls'),
+            rowNum: 10,
+            rowList: [10, 45, 80],
+            height: '100%',
+            viewrecords: true,
+            caption: 'Inventario de Equipos',
+            emptyrecords: 'No hay equipos para mostrar',
+            jsonReader: {
+                root: "rows",
+                page: "page",
+                total: "total",
+                records: "records",
+                repeatitems: false,
+                Id: "0"
+            },
+            autowidth: true,
+            multiselect: false
+        }).navGrid('#jqControls', { edit: true, add: true, del: true, search: false, refresh: true },
+            {
+                zIndex: 100,
+                url: '/equipo/Edit',
+                closeOnEscape: true,
+                closeAfterEdit: true,
+                recreateForm: true,
+                afterComplete: function (response) {
+                    if (response.responseText) {
+                        alert(response.responseText);
+                    }
+                }
+            },
+            {
+                zIndex: 100,
+                url: '/equipo/Create',
+                closeOnEscape: true,
+                closeAfterEdit: true,
+                afterComplete: function (response) {
+                    if (response.responseText) {
+                        alert(response.responseText);
+                    }
+                }
+            },
+            {
+                zIndex: 100,
+                url: '/equipo/Delete',
+                closeOnEscape: true,
+                closeAfterEdit: true,
+                recreateForm: true,
+                msg: "Esta seguro que desea eliminar este registro?",
+                afterComplete: function (response) {
+                    if (response.responseText) {
+                        alert(response.responseText);
+                    }
+                }
+            }); 
+    });
+</script>
+
+<div id="team"><table id="jqGrid"></table><div id="jqControls"></div></div>
+<br />
+<br />
+<div>
+    @Html.Partial("~/Views/Usuario/MostrarUsuario.cshtml")
+</div><br />
+<br />
+<div>
+    @Html.Partial("~/Views/HeadPhone/MostrarHead.cshtml")
+</div>

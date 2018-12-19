@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datos", "Datos", "{14122E2D-B5DA-478F-BEEA-5014E92DBEEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logica_Negocio", "Logica_Negocio", "{5585D74C-DD56-4013-AA3D-0DC76387D098}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entidades_Negocio", "Entidades_Negocio", "{ADBC0D4E-D466-4BD6-991D-9D721B3FFB71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentacion", "Presentacion", "{2550F813-7E92-47B3-A54B-343F0A286697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conexion", "Conexion\Conexion.csproj", "{65A5D696-844F-45CF-8AC6-5678B3EB1149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{0E971489-0B79-4866-8091-1C22F5B1A60B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{FEEC05AC-2C95-4630-89D1-F83C39992EBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{A58AF247-8839-425F-A024-5CAB225DA527}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65A5D696-844F-45CF-8AC6-5678B3EB1149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A5D696-844F-45CF-8AC6-5678B3EB1149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A5D696-844F-45CF-8AC6-5678B3EB1149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A5D696-844F-45CF-8AC6-5678B3EB1149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E971489-0B79-4866-8091-1C22F5B1A60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E971489-0B79-4866-8091-1C22F5B1A60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E971489-0B79-4866-8091-1C22F5B1A60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E971489-0B79-4866-8091-1C22F5B1A60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEEC05AC-2C95-4630-89D1-F83C39992EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEEC05AC-2C95-4630-89D1-F83C39992EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEEC05AC-2C95-4630-89D1-F83C39992EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEEC05AC-2C95-4630-89D1-F83C39992EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A58AF247-8839-425F-A024-5CAB225DA527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58AF247-8839-425F-A024-5CAB225DA527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58AF247-8839-425F-A024-5CAB225DA527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58AF247-8839-425F-A024-5CAB225DA527}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65A5D696-844F-45CF-8AC6-5678B3EB1149} = {14122E2D-B5DA-478F-BEEA-5014E92DBEEE}
+		{FEEC05AC-2C95-4630-89D1-F83C39992EBB} = {5585D74C-DD56-4013-AA3D-0DC76387D098}
+		{0E971489-0B79-4866-8091-1C22F5B1A60B} = {ADBC0D4E-D466-4BD6-991D-9D721B3FFB71}
+		{A58AF247-8839-425F-A024-5CAB225DA527} = {2550F813-7E92-47B3-A54B-343F0A286697}
+	EndGlobalSection
+EndGlobal

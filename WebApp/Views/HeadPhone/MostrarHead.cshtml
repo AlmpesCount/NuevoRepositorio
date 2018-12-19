@@ -1,0 +1,98 @@
+﻿<script>
+    $(document).ready(function(){
+        $("#gridHead").DataTable({
+            "ajax":{
+                "url": "/HeadPhone/MostrarHeadPhone",
+                "dataSrc": ""
+            },
+            "columns":[
+                {"data": "COD_HEAD"},
+                {"data": "ESTADO"},
+                {"data": "ASIGNADO"},
+                {"data": "APE_PATERNO"},
+                {"data": "APE_MATERNO"},
+                {"data": "NOMBRES"},
+                {"data": "FECHA_ENTREGA"},
+                {"data": "OBSERVACION"}]
+        });
+    });
+
+
+    //$(function () {
+    //    $("#gridHead").jqGrid({
+    //        url: "/HeadPhone/MostrarHeadPhone",
+    //        datatype: 'json',
+    //        mtype: 'Get',
+    //        colNames: ['COD_HEAD', 'ESTADO',
+    //                  'ASIGNADO', 'APE_PATERNO',
+    //                  'APE_MATERNO', 'NOMBRES',
+    //                  'FECHA_ENTREGA', 'OBSERVACION'],
+    //        colModel: [
+    //        { key: true, name: 'COD_HEAD', index: 'COD_HEAD', hidden: true },
+	//		{ name: 'ESTADO', index: 'ESTADO', width: 30 },
+    //        { name: 'ASIGNADO', index: 'ASIGNADO', width: 30 },
+    //        { name: 'APE_PATERNO', index: 'APE_PATERNO', width: 30 },
+    //        { name: 'APE_MATERNO', index: 'APE_MATERNO', width: 30 },
+    //        { name: 'NOMBRES', index: 'NOMBRES', width: 30 },
+    //        { name: 'FECHA_ENTREGA', index: 'FECHA_ENTREGA', width: 30 },
+    //        { name: 'OBSERVACION', index: 'OBSERVACION', width: 30 }
+    //        ],
+    //        pager: jQuery('#ctrHead'),
+    //        rowNum: 10,
+    //        rowList: [10, 45, 80],
+    //        height: '100%',
+    //        viewrecords: true,
+    //        caption: 'Inventario de HeadPhones',
+    //        emptyrecords: 'No hay HeadPhones para mostrar',
+    //        jsonReader: {
+    //            root: "rows",
+    //            page: "page",
+    //            total: "total",
+    //            records: "records",
+    //            repeatitems: false,
+    //            Id: "0"
+    //        },
+    //        autowidth: true,
+    //        multiselect: false
+    //    }).navGrid('#ctrHead', { edit: true, add: true, del: true, search: false, refresh: true },
+    //        {
+    //            zIndex: 100,
+    //            url: '/equipo/Edit',
+    //            closeOnEscape: true,
+    //            closeAfterEdit: true,
+    //            recreateForm: true,
+    //            afterComplete: function (response) {
+    //                if (response.responseText) {
+    //                    alert(response.responseText);
+    //                }
+    //            }
+    //        },
+    //        {
+    //            zIndex: 100,
+    //            url: '/equipo/Create',
+    //            closeOnEscape: true,
+    //            closeAfterEdit: true,
+    //            afterComplete: function (response) {
+    //                if (response.responseText) {
+    //                    alert(response.responseText);
+    //                }
+    //            }
+    //        },
+    //        {
+    //            zIndex: 100,
+    //            url: '/equipo/Delete',
+    //            closeOnEscape: true,
+    //            closeAfterEdit: true,
+    //            recreateForm: true,
+    //            msg: "Esta seguro que desea eliminar este registro?",
+    //            afterComplete: function (response) {
+    //                if (response.responseText) {
+    //                    alert(response.responseText);
+    //                }
+    //            }
+    //        });
+    //});
+</script>
+
+<div><table id="gridHead"></table><div id="ctrHead"></div></div>
+

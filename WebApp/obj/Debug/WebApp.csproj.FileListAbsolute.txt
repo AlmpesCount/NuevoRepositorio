@@ -1,0 +1,298 @@
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll.config
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.pdb
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\Logica.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.pdb
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\Logica.pdb
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.xml
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.xml
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.xml
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.xml
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.xml
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.xml
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.pdb
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Razor.resources.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.resources.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Helpers.resources.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Mvc.resources.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll.config
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Newtonsoft.Json.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.xml
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.xml
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.xml
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.xml
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.xml
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.xml
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Razor.resources.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.resources.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Deployment.resources.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Razor.resources.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Helpers.resources.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Mvc.resources.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll.config
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Newtonsoft.Json.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.xml
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Razor.resources.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.resources.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Deployment.resources.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Razor.resources.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Helpers.resources.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Mvc.resources.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll.config
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Newtonsoft.Json.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.xml
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.xml
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.xml
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.xml
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.xml
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.xml
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.xml
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Razor.resources.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.resources.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Deployment.resources.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Razor.resources.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Helpers.resources.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll.config
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Newtonsoft.Json.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Newtonsoft.Json.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.xml
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Razor.resources.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll.config
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Newtonsoft.Json.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.xml
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.xml
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.xml
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.xml
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.xml
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Razor.resources.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll.config
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Newtonsoft.Json.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.xml
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Razor.resources.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.resources.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Deployment.resources.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Razor.resources.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Helpers.resources.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Mvc.resources.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll.config
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\WebApp.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Newtonsoft.Json.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Entidades.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Logica.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Razor.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Webpages.Razor.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Helpers.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\System.Web.Mvc.xml
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\Conexion.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Razor.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\WebApp\obj\Debug\WebApp.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\WebApp.dll.config
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\WebApp.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\WebApp.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\Entidades.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\EntityFramework.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\Logica.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\Newtonsoft.Json.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Helpers.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Mvc.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Razor.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Webpages.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Webpages.Razor.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\Conexion.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\Entidades.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\Logica.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\EntityFramework.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Razor.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Webpages.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Webpages.Razor.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Helpers.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\System.Web.Mvc.xml
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\Conexion.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\es\System.Web.Razor.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\obj\Debug\WebApp.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\WebApp\obj\Debug\WebApp.pdb

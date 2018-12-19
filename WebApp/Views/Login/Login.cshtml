@@ -1,0 +1,63 @@
+﻿@model Entidades.beUserCRM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SB Admin - Login</title>
+
+    <link href="~/Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/sb-admin.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS-->
+
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="card card-login mx-auto mt-5">
+            <div class="card-header">Login</div>
+            <div class="card-body">
+                @using (Html.BeginForm("Authorize", "Login", FormMethod.Post))
+                {
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            @Html.TextBoxFor(model => model.USUARIO, new { @class = "form-almpes", @placeholder = "Usuario", @required = "required", @autofocus = "autofocus" })
+                            @Html.LabelFor(model => model.USUARIO)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            @Html.TextBoxFor(model => model.CARGO, new { @type = "password", @class = "form-almpes", @placeholder = "Password", @required = "required" })
+                            @Html.LabelFor(model => model.CARGO)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="Recordar contraseña">
+                                Recordar contraseña
+                            </label>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-danger btn-block" value="Ingresar" />
+                }
+                <div class="text-center">
+                    <a class="d-red small mt-3" href="/PaginaPrincipal/PaginaPrincipal">Regresar</a>
+                    @*<a class="d-block small" href="forgot-password.html">Forgot Password?</a>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Assets/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+</html>

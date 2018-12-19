@@ -1,0 +1,81 @@
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.pdb
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.pdb
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.pdb
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.dll
+C:\Users\EstanciaMP\Desktop\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.pdb
+E:\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+E:\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.dll
+E:\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.pdb
+D:\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+D:\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.dll
+D:\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.pdb
+F:\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+F:\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.dll
+F:\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.pdb
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.dll
+C:\Users\Administrador\Desktop\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.pdb
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.dll
+D:\DATOS DE TRABAJO\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Logica.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Conexion.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Debug\Entidades.pdb
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.dll
+C:\Users\Pc\Desktop\AlmpesPage\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Debug\Logica.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Logica.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Logica.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Conexion.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Entidades.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Conexion.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Entidades.pdb
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Debug\Logica.dll
+C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Debug\Logica.pdb

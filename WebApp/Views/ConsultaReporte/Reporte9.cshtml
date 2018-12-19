@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Reporte 2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+    </li>
+    <li class="breadcrumb-item active">Tables</li>
+</ol>
+<!-- DataTables Example -->
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Informe de Reporte Nro9
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            @Html.Partial("ConsultaReportePartial")
+        </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+</div>
+<p class="small text-center text-muted my-5">
+    <em>More table examples coming soon...</em>
+</p>
+
+<script src="~/Assets/jqgrid/js/jquery-1.11.0.min.js"></script>
+<script src="~/Assets/jqgrid/js/jquery.jqGrid.min.js"></script>
+<script src="~/Assets/jqgrid/js/i18n/grid.locale-es.js"></script>
+<script src="~/Scripts/jquery-ui-1.10.4.min.js"></script>
+<link href="~/Assets/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+
+
+<script type="text/javascript">
+    $("#grid").jqGrid({
+        url: "/ConsultaReporte/Reporte9Lists",
+        datatype: 'json',
+        mtype: 'Get',
+        colNames: ['Periodo', 'Resultado', 'Cuenta', 'año',
+                   'mes'],
+        colModel: [
+        { name: 'Periodo', index: 'Periodo', width: 50, align: 'center'},
+        { name: 'Resultado', index: 'Resultado', width: 200, align: 'center' },
+        { name: 'Cuenta', index: 'Cuenta', width: 100, align: 'center' },
+        { name: 'año', index: 'año', width: 100, align: 'center' },
+        { name: 'mes', index: 'mes', width: 100, align: 'center' }
+        ],
+        height: '400',
+        pager: jQuery('#pager'),
+        rowNum: 20,
+        rowList: [20, 250, 450],
+        viewrecords: true,
+        caption: 'Todo List',
+        loadonce: true,
+        emptyrecords: 'No records to display',
+        jsonReader: {
+            root: "rows",
+            page: "page",
+            total: "total",
+            records: "records",
+            repeatitems: false,
+            Id: "0"
+        },
+        autowidth: true,
+        multiselect: false
+    });
+
+</script>
+
+
+

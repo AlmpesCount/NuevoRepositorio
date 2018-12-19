@@ -1,0 +1,7 @@
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Release\Conexion.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Release\Conexion.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Release\Entidades.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Release\Entidades.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Release\Conexion.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Release\Conexion.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Release\Conexion.pdb

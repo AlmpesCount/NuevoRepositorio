@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Reporte 10";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+    </li>
+    <li class="breadcrumb-item active">Tables</li>
+</ol>
+<!-- DataTables Example -->
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Informe de Reporte Nro10
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="myTable" width="100%" cellspacing="0" style="text-align: center; font-size: 15px;">
+                <thead>
+                    <tr>
+                        <th>Periodo</th>
+                        <th>PeriodoOrd</th>
+                        <th>Mes</th>
+                        <th>Anio</th>
+                        <th>TipoVenta</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+            </table>
+            <input type="button" id="btnMostrar" value="Mostrar" onclick=" location.href = '/Charts/ChartsView' " />
+        </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+</div>
+<p class="small text-center text-muted my-5">
+    <em>More table examples coming soon...</em>
+</p>
+<script src="~/Assets/vendor/jquery/jquery.min.js"></script>
+<script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#myTable').DataTable({
+            "ajax": {
+                "url": "/consultareporte/cargarreporte10",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                { "data": "Periodo", "autoWidth": true },
+                { "data": "PeriodoOrd", "autoWidth": true },
+                { "data": "Mes", "autoWidth": true },
+                { "data": "Anio", "autoWidth": true },
+                { "data": "TipoVenta", "autoWidth": true },
+                { "data": "Cantidad", "autoWidth": true }
+            ],
+            "language": {
+                "sProcessing": "Procesando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "No se encontraron resultados",
+                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix": "",
+                "sSearch": "Buscar:",
+                "sUrl": "",
+                "sInfoThousands": ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                }
+            }
+        });
+    });
+</script>

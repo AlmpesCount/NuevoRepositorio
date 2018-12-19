@@ -1,0 +1,5 @@
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Entidades\bin\Release\Entidades.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Entidades\bin\Release\Entidades.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Entidades\obj\Release\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Entidades\obj\Release\Entidades.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Entidades\obj\Release\Entidades.pdb

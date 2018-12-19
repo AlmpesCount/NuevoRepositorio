@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "Reporte 12";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+    </li>
+    <li class="breadcrumb-item active">Tables</li>
+</ol>
+<!-- DataTables Example -->
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Informe de Reporte Nro12
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="myTable" width="100%" cellspacing="0" style="text-align: center; font-size: 15px;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Dia</th>
+                        <th>N_Doc</th>
+                        <th>Fecha Venta</th>
+                        <th>Supervisor</th>
+                        <th>N_Solicitud</th>
+                        <th>Fecha_Ing</th>
+                        <th>Cod_Promt</th>
+                        <th>Cliente</th>
+                        <th>Descripcion</th>
+                        <th>ST3</th>
+                        <th>ST1</th>
+                        <th>Glosa</th>
+                        <th>RT95FACT</th>
+                        <th>Mes</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+</div>
+<script src="~/Assets/vendor/jquery/jquery.min.js"></script>
+<script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#myTable').DataTable({
+            "ajax": {
+                "url": "/consultareporte/cargarreporte12",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                { "data": "ID", "autoWidth": true },
+                { "data": "DIA", "autoWidth": true },
+                { "data": "N_Doc", "autoWidth": true },
+                { "data": "FECHA_VENTA", "autoWidth": true },
+                { "data": "SUPERVISOR", "autoWidth": true },
+                { "data": "N_Solicitud", "autoWidth": true },
+                { "data": "Fecha_Ing", "autoWidth": true },
+                { "data": "Cod_Promt", "autoWidth": true },
+                { "data": "Apell_Cliente1", "autoWidth": true },
+                { "data": "Descripcion", "autoWidth": true },
+                { "data": "ST3", "autoWidth": true },
+                { "data": "ST1", "autoWidth": true },
+                { "data": "Glosa", "autoWidth": true },
+                { "data": "RT95FACT", "autoWidth": true },
+                { "data": "Mes", "autoWidth": true }
+            ],
+            "language": {
+                "sProcessing": "Procesando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "No se encontraron resultados",
+                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix": "",
+                "sSearch": "Buscar:",
+                "sUrl": "",
+                "sInfoThousands": ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                }
+            }
+        });
+    });
+</script>
+
+
+
+

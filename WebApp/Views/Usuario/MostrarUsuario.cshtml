@@ -1,0 +1,82 @@
+﻿<script>
+    $(function () {
+        $("#gridUsuario").jqGrid({
+            url: "/usuario/mostrarusuario",
+            datatype: 'json',
+            mtype: 'Get',
+            colNames: ['COD_USU_CAB', 'APE_PATERNO',
+                       'APE_MATERNO', 'NOMBRES',
+                       'DOCUMENTO', 'CARGO',
+                       'PERFIL', 'FECHA_INGRESO',
+                       'AREA', 'ESTADO'],
+            colModel: [
+            { key: true, name: 'COD_USU_CAB', index: 'COD_USU_CAB', hidden: true },
+			{ name: 'APE_PATERNO', index: 'APE_PATERNO', width: 30 },
+            { name: 'APE_MATERNO', index: 'APE_MATERNO', width: 30 },
+            { name: 'NOMBRES', index: 'NOMBRES', width: 30 },
+            { name: 'DOCUMENTO', index: 'DOCUMENTO', width: 30 },
+            { name: 'CARGO', index: 'CARGO', width: 30 },
+            { name: 'PERFIL', index: 'PERFIL', width: 30 },
+            { name: 'FECHA_INGRESO', index: 'FECHA_INGRESO', width: 30 },
+            { name: 'AREA', index: 'AREA', width: 30 },
+            { name: 'ESTADO', index: 'ESTADO', width: 30 }
+
+            ],
+            pager: jQuery('#ctrUser'),
+            rowNum: 10,
+            rowList: [10, 45, 80],
+            height: '100%',
+            viewrecords: true,
+            caption: 'Inventario de Personal',
+            emptyrecords: 'No hay personal para mostrar',
+            jsonReader: {
+                root: "rows",
+                page: "page",
+                total: "total",
+                records: "records",
+                repeatitems: false,
+                Id: "0"
+            },
+            autowidth: true,
+            multiselect: false
+        }).navGrid('#ctrUser', { edit: true, add: true, del: true, search: false, refresh: true },
+            {
+                zIndex: 100,
+                url: '/equipo/Edit',
+                closeOnEscape: true,
+                closeAfterEdit: true,
+                recreateForm: true,
+                afterComplete: function (response) {
+                    if (response.responseText) {
+                        alert(response.responseText);
+                    }
+                }
+            },
+            {
+                zIndex: 100,
+                url: '/equipo/Create',
+                closeOnEscape: true,
+                closeAfterEdit: true,
+                afterComplete: function (response) {
+                    if (response.responseText) {
+                        alert(response.responseText);
+                    }
+                }
+            },
+            {
+                zIndex: 100,
+                url: '/equipo/Delete',
+                closeOnEscape: true,
+                closeAfterEdit: true,
+                recreateForm: true,
+                msg: "Esta seguro que desea eliminar este registro?",
+                afterComplete: function (response) {
+                    if (response.responseText) {
+                        alert(response.responseText);
+                    }
+                }
+            });
+    });
+</script>
+
+<div id="team"><table id="gridUsuario"></table><div id="ctrUser"></div></div>

@@ -1,0 +1,9 @@
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Release\Logica.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Release\Logica.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Release\Conexion.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Release\Entidades.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Release\Conexion.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Release\Entidades.pdb
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Release\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Release\Logica.dll
+C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Release\Logica.pdb
