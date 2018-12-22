@@ -120,6 +120,38 @@ namespace Conexion
 
                         lstReporte.Add(conrep);
                     }
+                    if(Data.TablaID == 15)
+                    {
+                        beReporte15 conrep = new beReporte15();
+                        conrep.ID = Convert.ToInt32(rdr["ID"].ToString());
+                        conrep.DNI = rdr["DNI"].ToString();
+                        conrep.ST3 = rdr["ST3"].ToString();
+                        conrep.Cliente = rdr["CLIENTE"].ToString();
+                        conrep.NroSol = rdr["NRSOL"].ToString();
+                        conrep.FechaVenta = rdr["FECHAVENTA"].ToString();
+                        conrep.Descripcion = rdr["DESCRIPCION"].ToString();
+                        conrep.Promotor = rdr["PROMOTOR"].ToString();
+                        conrep.Supervisor = rdr["SUPERVISOR"].ToString();
+                        conrep.EstadoEnvio = rdr["ESTADO DE ENVIO"].ToString();
+                        conrep.EstadoFinal = rdr["ESTADO_FINAL"].ToString();
+                        conrep.RT95FACT = rdr["RT95FACT"].ToString();
+                        conrep.F_Activacion = rdr["F_ACTIVACION"].ToString();
+                        conrep.TC_ACT = rdr["TC_ACT"].ToString();
+
+                        lstReporte.Add(conrep);
+                    }
+                    if (Data.TablaID == 16)
+                    {
+                        beReporte16 conrep = new beReporte16();
+                        conrep.FechaVenta = rdr["FECHAVENTA"].ToString();
+                        conrep.RT95FACT = rdr["RT95FACT"].ToString();
+                        conrep.DNI = rdr["DNI"].ToString();
+                        conrep.NroSol = rdr["NRSOL"].ToString();
+                        conrep.Cliente = rdr["CLIENTE"].ToString();
+                        conrep.Descripcion = rdr["DESCRIPCION"].ToString();
+
+                        lstReporte.Add(conrep);
+                    }
                     if (Data.TablaID == 28)
                     {
                         beReporte28 conrep = new beReporte28();

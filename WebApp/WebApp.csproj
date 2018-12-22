@@ -257,6 +257,7 @@
     <Content Include="Assets\js\Tables\demo\chart-area-demo.js" />
     <Content Include="Assets\js\Tables\demo\chart-bar-demo.js" />
     <Content Include="Assets\js\Tables\demo\chart-pie-demo.js" />
+    <Content Include="Assets\js\Tables\demo\ChartPrueba.js" />
     <Content Include="Assets\js\Tables\demo\datatables-demo.js" />
     <Content Include="Assets\js\Tables\sb-admin.js" />
     <Content Include="Assets\js\Tables\sb-admin.min.js" />
@@ -1907,6 +1908,8 @@
     <Content Include="Views\ConsultaReporte\Reporte12.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte13.cshtml" />
     <Content Include="Views\Charts\ChartsView.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte15.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte16.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

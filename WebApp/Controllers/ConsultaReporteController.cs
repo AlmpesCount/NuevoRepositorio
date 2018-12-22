@@ -70,6 +70,16 @@ namespace WebApp.Controllers
                 /*lstReporte = consulta.TotalTabla(Reporte);*/
                 return RedirectToAction("Reporte13", "ConsultaReporte");
             }
+            if (Reporte.TablaID == 15)
+            {
+                /*lstReporte = consulta.TotalTabla(Reporte);*/
+                return RedirectToAction("Reporte15", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 16)
+            {
+                /*lstReporte = consulta.TotalTabla(Reporte);*/
+                return RedirectToAction("Reporte16", "ConsultaReporte");
+            }
             return View(Reporte);
         }
 
@@ -104,6 +114,22 @@ namespace WebApp.Controllers
             return View();
         }
         public ActionResult CargarReporte13()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte15()
+        {
+            return View();
+        }
+        public ActionResult CargarReporte15()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte16()
+        {
+            return View();
+        }
+        public ActionResult CargarReporte16()
         {
             return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
         }

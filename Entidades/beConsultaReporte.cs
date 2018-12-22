@@ -174,4 +174,41 @@ namespace Entidades
         public int CAprobado { get; set; }
         public int CActivado { get; set; }
     }
+
+    public class beReporte15 {
+        public int ID { get; set; }
+        public string DNI { get; set; }
+        public string ST3 { get; set; }
+        public string Cliente { get; set; }
+        public string NroSol { get; set; }
+        public string FechaVenta { get; set; }
+        public string Descripcion { get; set; }
+        public string Promotor { get; set; }
+        public string Supervisor { get; set; }
+        public string EstadoEnvio { get; set; }
+        public string EstadoFinal { get; set; }
+        public string RT95FACT { get; set; }
+        public string F_Activacion { get; set; }
+        public string TC_ACT { get; set; }
+    }
+
+    public class beReporte16
+    {
+        public string FechaVenta { get; set; }
+        public string RT95FACT { get; set; }
+        public string DNI { get; set; }
+        public string NroSol { get; set; }
+        public string Cliente { get; set; }
+        public string Descripcion { get; set; }
+    }
+
+    public class beReporte19
+    {
+        public string TipoZona { get; set; }
+        public string Zona { get; set; }
+        public string Departamento { get; set; }
+        public string Activacion { get; set; }
+        public string EstadoAnalisis { get; set; }
+
+    }
 }

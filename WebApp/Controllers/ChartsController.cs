@@ -17,7 +17,7 @@ namespace WebApp.Controllers
             return View();
         }
 
-        public ActionResult CargarChartArea()
+        public List<beConsultaReporte> CargarChartArea()
         {
             List<beConsultaReporte> lstReporte = new List<beConsultaReporte>();
             brConsultaReporte reporte = new brConsultaReporte();
@@ -29,7 +29,7 @@ namespace WebApp.Controllers
 
             lstReporte.Add(entReporte);
 
-            return View();
+            return lstReporte;
         }
 	}
 }
