@@ -1,57 +1,124 @@
 ﻿@{
     ViewBag.Title = "Reporte 29";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div>
-    <table id="grid"></table>
-    <div id="pager"></div>
-</div>
 
-<script src="~/Assets/jqgrid/js/jquery-1.11.0.min.js"></script>
-<script src="~/Assets/jqgrid/js/jquery.jqGrid.min.js"></script>
-<script src="~/Assets/jqgrid/js/i18n/grid.locale-es.js"></script>
-<script src="~/Scripts/jquery-ui-1.10.4.min.js"></script>
-<link href="~/Assets/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
-<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+    </li>
+    <li class="breadcrumb-item active">Tables</li>
+</ol>
+<!-- DataTables Example -->
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Informe de Reporte Nro29
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 60%">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Dia</th>
+                        <th>Mes</th>
+                        <th>Fecha Llamada</th>
+                        <th>DNI</th>
+                        <th>Telefono</th>
+                        <th>UserGO</th>
+                        <th>NombreGO</th>
+                        <th>Resultado</th>
+                        <th>Duracion_Seg</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Dia</th>
+                        <th>Mes</th>
+                        <th>Fecha Llamada</th>
+                        <th>DNI</th>
+                        <th>Telefono</th>
+                        <th>UserGO</th>
+                        <th>NombreGO</th>
+                        <th>Resultado</th>
+                        <th>Duracion_Seg</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+</div>
+<script src="~/Assets/vendor/jquery/jquery.min.js"></script>
+<script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
+
 
 <script type="text/javascript">
-    $(function () {
-        $("#grid").jqGrid({
-            url: "/ConsultaReporte/Reporte29Lists",
-            datatype: 'json',
-            mtype: 'Get',
-            colNames: ['HORA', 'DIA', 'MES', 'FECHA_LLAMADA',
-                       'DNI', 'TELEFONO', 'USERGO', 'NOMBREGO',
-                        'RESULTADO', 'DURACION_SEG'],
-            colModel: [
-            { name: 'HORA', index: 'HORA', width: 15 },
-            { name: 'DIA', index: 'DIA', width: 15 },
-            { name: 'MES', index: 'MES', width: 15 },
-            { name: 'FECHA_LLAMADA', index: 'FECHA_LLAMADA', width: 15, formatter: 'date', formatoptions: { newformat: 'm/d/Y' }, datefmt: 'd-M-Y' },
-            { name: 'DNI', index: 'DNI', width: 15 },
-            { name: 'TELEFONO', index: 'TELEFONO', width: 15 },
-            { name: 'USERGO', index: 'USERGO', width: 15 },
-            { name: 'NOMBREGO', index: 'NOMBREGO', width: 15 },
-            { name: 'RESULTADO', index: 'RESULTADO', width: 15 },
-            { name: 'DURACION_SEG', index: 'DURACION_SEG', width: 15 }
-            ],
-            pager: jQuery('#pager'),
-            rowNum: 10,
-            rowList: [10, 150, 300],
-            height: '100%',
-            viewrecords: true,
-            caption: 'Todo List',
-            loadonce: false,
-            emptyrecords: 'No records to display',
-            jsonReader: {
-                root: "rows",
-                page: "page",
-                total: "total",
-                records: "records",
-                repeatitems: false,
-                Id: "0"
+    $(document).ready(function () {
+        $('#myTable').DataTable({
+            "ajax": {
+                "url": "/consultareporte/cargarreporte29",
+                "type": "GET",
+                "datatype": "json"
             },
-            autowidth: true,
-            multiselect: false
+            "columns": [
+                { "data": "HORA", "autoWidth": true },
+                { "data": "DIA", "autoWidth": true },
+                { "data": "MES", "autoWidth": true },
+                { "data": "FECHA_LLAMADA", "autoWidth": true },
+                { "data": "DNI", "autoWidth": true },
+                { "data": "TELEFONO", "autoWidth": true },
+                { "data": "USERGO", "autoWidth": true },
+                { "data": "NOMBREGO", "autoWidth": true },
+                { "data": "RESULTADO", "autoWidth": true },
+                { "data": "DURACION_SEG", "autoWidth": true }
+            ],
+            "language": {
+                "sProcessing": "Procesando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "No se encontraron resultados",
+                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix": "",
+                "sSearch": "Buscar:",
+                "sUrl": "",
+                "sInfoThousands": ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                }
+            },
+        });
+
+        $('#myTable tfoot th').each(function () {
+            var title = $(this).text();
+            $(this).html('<input type="text" placeholder="Buscar ' + title + '" style="width:150px;"/>');
+        });
+
+        var table = $('#myTable').DataTable();
+
+        table.columns().every(function () {
+            var that = this;
+
+            $('input', this.footer()).on('keyup change', function () {
+                if (that.search() !== this.value) {
+                    that
+                        .search(this.value)
+                        .draw();
+                }
+            });
         });
     });
 </script>

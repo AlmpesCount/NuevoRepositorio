@@ -31,20 +31,6 @@ namespace Entidades
         public int Cantidad { get; set; }
     }
 
-    public class beReporte29
-    {
-        public string HORA { get; set; }
-        public string DIA { get; set; }
-        public string MES { get; set; }
-        public string FECHA_LLAMADA { get; set; }
-        public string DNI { get; set; }
-        public string TELEFONO { get; set; }
-        public string USERGO { get; set; }
-        public string NOMBREGO { get; set; }
-        public string RESULTADO { get; set; }
-        public int DURACION_SEG { get; set; }
-    }
-
     public class beReporte27
     {
         public string Periodo { get; set; }
@@ -328,5 +314,19 @@ namespace Entidades
         public string COMENTARIO { get; set; }
         public string AUDITOR { get; set; }
         public string SUPERVISOR { get; set; }
+    }
+
+    public class beReporte29
+    {
+        public string HORA { get; set; }
+        public string DIA { get; set; }
+        public string MES { get; set; }
+        public string FECHA_LLAMADA { get; set; }
+        public string DNI { get; set; }
+        public string TELEFONO { get; set; }
+        public string USERGO { get; set; }
+        public string NOMBREGO { get; set; }
+        public string RESULTADO { get; set; }
+        public string DURACION_SEG { get; set; }
     }
 }

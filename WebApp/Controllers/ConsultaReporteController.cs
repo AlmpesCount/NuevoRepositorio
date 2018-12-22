@@ -97,6 +97,10 @@ namespace WebApp.Controllers
             {
                 return RedirectToAction("Reporte28", "ConsultaReporte");
             }
+            if (Reporte.TablaID == 29)
+            {
+                return RedirectToAction("Reporte29", "ConsultaReporte");
+            }
             return View(Reporte);
         }
         public ActionResult Reporte1()
@@ -251,7 +255,14 @@ namespace WebApp.Controllers
         {
             return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
         }
-
+        public ActionResult Reporte29()
+        {
+            return View();
+        }
+        public ActionResult CargarReporte29()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
     }
 }
         

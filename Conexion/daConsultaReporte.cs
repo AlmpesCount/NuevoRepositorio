@@ -347,6 +347,23 @@ namespace Conexion
 
                         lstReporte.Add(conrep);
                     }
+
+                    if (Data.TablaID == 29)
+                    {
+                        beReporte29 conrep = new beReporte29();
+                        conrep.HORA = rdr["HORA"].ToString();
+                        conrep.DIA = rdr["DIA"].ToString();
+                        conrep.MES = rdr["MES"].ToString();
+                        conrep.FECHA_LLAMADA = rdr["FECHA_LLAMADA"].ToString();
+                        conrep.DNI = rdr["DNI"].ToString();
+                        conrep.TELEFONO = rdr["TELEFONO"].ToString();
+                        conrep.USERGO = rdr["USERGO"].ToString();
+                        conrep.NOMBREGO = rdr["NOMBREGO"].ToString();
+                        conrep.RESULTADO = rdr["RESULTADO"].ToString();
+                        conrep.DURACION_SEG = rdr["DURACION_SEG"].ToString();
+
+                        lstReporte.Add(conrep);
+                    }
                     
                 }
                 con.Close();
