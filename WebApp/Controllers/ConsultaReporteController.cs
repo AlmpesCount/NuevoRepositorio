@@ -24,65 +24,135 @@ namespace WebApp.Controllers
         public ActionResult MostrarTablaConsulta(beConsultaReportePrincipal Reporte)
         {
             lstReporte = consulta.TotalTabla(Reporte);
+
+            if (Reporte.TablaID == 1)
+            {
+                return RedirectToAction("Reporte1", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 2)
+            {
+                return RedirectToAction("Reporte2", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 5)
+            {
+                return RedirectToAction("Reporte5", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 7)
+            {
+                return RedirectToAction("Reporte7", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 8)
+            {
+                return RedirectToAction("Reporte8", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 9)
+            {
+                return RedirectToAction("Reporte9", "ConsultaReporte");
+            }
             if (Reporte.TablaID == 10)
             {
                 return RedirectToAction("Reporte10", "ConsultaReporte");
             }  
-            if (Reporte.TablaID == 29)
+            if (Reporte.TablaID == 11)
             {
-                return RedirectToAction("Reporte29", "ConsultaReporte");
+                return RedirectToAction("Reporte11", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 12)
+            {
+                return RedirectToAction("Reporte12", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 13)
+            {
+                return RedirectToAction("Reporte13", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 15)
+            {
+                return RedirectToAction("Reporte15", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 16)
+            {
+                return RedirectToAction("Reporte16", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 19)
+            {
+                return RedirectToAction("Reporte19", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 20)
+            {
+                return RedirectToAction("Reporte20", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 21)
+            {
+                return RedirectToAction("Reporte21", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 22)
+            {
+                return RedirectToAction("Reporte22", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 25)
+            {
+                return RedirectToAction("Reporte25", "ConsultaReporte");
             }
             if (Reporte.TablaID == 28)
             {
                 return RedirectToAction("Reporte28", "ConsultaReporte");
             }
-            if (Reporte.TablaID == 27)
-            {
-                return RedirectToAction("Reporte27", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 1)
-            {
-                /*lstReporte = consulta.TotalTabla(Reporte);*/
-                return RedirectToAction("Reporte1", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 2)
-            {
-                /*tabla = consulta.MostrarTablaConsulta(Reporte);*/
-                return RedirectToAction("Reporte2", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 9)
-            {
-                /*tabla = consulta.MostrarTablaConsulta(Reporte);*/
-                return RedirectToAction("Reporte9", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 11)
-            {
-                /*lstReporte = consulta.TotalTabla(Reporte);*/
-                return RedirectToAction("Reporte11", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 12)
-            {
-                /*lstReporte = consulta.TotalTabla(Reporte);*/
-                return RedirectToAction("Reporte12", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 13)
-            {
-                /*lstReporte = consulta.TotalTabla(Reporte);*/
-                return RedirectToAction("Reporte13", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 15)
-            {
-                /*lstReporte = consulta.TotalTabla(Reporte);*/
-                return RedirectToAction("Reporte15", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 16)
-            {
-                /*lstReporte = consulta.TotalTabla(Reporte);*/
-                return RedirectToAction("Reporte16", "ConsultaReporte");
-            }
             return View(Reporte);
         }
+        public ActionResult Reporte1()
+        {
+            return View();
+        }
 
+        public ActionResult CargarReporte1()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte2()
+        {
+            return View();
+        }
+
+        public ActionResult CargarReporte2()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte5()
+        {
+            return View();
+        }
+
+        public ActionResult CargarReporte5()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte7()
+        {
+            return View();
+        }
+
+        public ActionResult CargarReporte7()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte8()
+        {
+            return View();
+        }
+
+        public ActionResult CargarReporte8()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte9()
+        {
+            return View();
+        }
+
+        public ActionResult CargarReporte9()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
         public ActionResult Reporte10()
         {
             return View();
@@ -133,6 +203,46 @@ namespace WebApp.Controllers
         {
             return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
         }
+        public ActionResult Reporte19()
+        {
+            return View();
+        }
+        public ActionResult CargarReporte19()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte20()
+        {
+            return View();
+        }
+        public ActionResult CargarReporte20()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte21()
+        {
+            return View();
+        }
+        public ActionResult CargarReporte21()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte22()
+        {
+            return View();
+        }
+        public ActionResult CargarReporte22()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte25()
+        {
+            return View();
+        }
+        public ActionResult CargarReporte25()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
         public ActionResult Reporte28()
         {
             return View();
@@ -140,260 +250,6 @@ namespace WebApp.Controllers
         public ActionResult CargarReporte28()
         {
             return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
-        }
-
-        public JsonResult Reporte10Lists(string sidx, string sord, int page, int rows, string anio, string mes)  //Gets the todo Lists.
-        {
-            int pageIndex = Convert.ToInt32(page) - 1;
-            int pageSize = rows;
-            List<beConsultaReporte> todoListsResults = new List<beConsultaReporte>();
-            
-
-            if (string.IsNullOrEmpty(mes) || string.IsNullOrEmpty(anio))
-            {
-                /*todoListsResults = lstReporte;*/
-            }
-            //else
-            //{
-            //    beConsultaReporte data = new beConsultaReporte();
-            //    data.MesID = Convert.ToInt32(mes);
-            //    data.AnioID = Convert.ToInt32(anio);
-            //    todoListsResults = consulta.MostrarConsulta(data).ToList();
-            //}
-
-            int totalRecords = todoListsResults.Count();
-            var totalPages = (int)Math.Ceiling((float)totalRecords / (float)rows);
-
-            var jsonData = new
-            {
-                total = totalPages,
-                page,
-                records = totalRecords,
-                rows = lstReporte
-            };
-            return Json(jsonData, JsonRequestBehavior.AllowGet);
-        }
-
-        public ActionResult Reporte29()
-        { 
-            return View();
-        }
-
-        public JsonResult Reporte29Lists(string sidx, string sord, int page, int rows)  //Gets the todo Lists.
-        {
-            int pageIndex = Convert.ToInt32(page) - 1;
-            int pageSize = rows;
-            List<beReporte29> todoListsResults = new List<beReporte29>();
-
-
-            //if (string.IsNullOrEmpty(mes) || string.IsNullOrEmpty(anio))
-            //{
-                /*todoListsResults = ucTablaLista.DataTableToList<beReporte29>(tabla);*/
-            //}
-            //else
-            //{
-                //beReporte29 data = new beReporte29();
-                //data.MesID = Convert.ToInt32(mes);
-                //data.AnioID = Convert.ToInt32(anio);
-                //todoListsResults = consulta.MostrarConsulta(data).ToList();
-            //}
-
-            int totalRecords = todoListsResults.Count();
-            var totalPages = (int)Math.Ceiling((float)totalRecords / (float)rows);
-
-            var jsonData = new
-            {
-                total = totalPages,
-                page,
-                records = totalRecords,
-                rows = todoListsResults
-            };
-            return Json(jsonData, JsonRequestBehavior.AllowGet);
-        }
-
-        //public ActionResult Reporte28()
-        //{
-        //    return View();
-        //}
-
-        public JsonResult Reporte28Lists(string sidx, string sord, int page, int rows)  //Gets the todo Lists.
-        {
-            int pageIndex = Convert.ToInt32(page) - 1;
-            int pageSize = rows;
-            List<beReporte28> todoListsResults = new List<beReporte28>();
-
-
-            //if (string.IsNullOrEmpty(mes) || string.IsNullOrEmpty(anio))
-            //{
-            /*todoListsResults = ucTablaLista.DataTableToList<beReporte28>(tabla);*/
-            //}
-            //else
-            //{
-            //beReporte29 data = new beReporte29();
-            //data.MesID = Convert.ToInt32(mes);
-            //data.AnioID = Convert.ToInt32(anio);
-            //todoListsResults = consulta.MostrarConsulta(data).ToList();
-            //}
-
-            int totalRecords = todoListsResults.Count();
-            var totalPages = (int)Math.Ceiling((float)totalRecords / (float)rows);
-
-            var jsonData = new
-            {
-                total = totalPages,
-                page,
-                records = totalRecords,
-                rows = todoListsResults
-            };
-            return Json(jsonData, JsonRequestBehavior.AllowGet);
-        }
-
-        public ActionResult Reporte27()
-        {
-            return View();
-        }
-
-        public JsonResult Reporte27Lists(string sidx, string sord, int page, int rows)  //Gets the todo Lists.
-        {
-            int pageIndex = Convert.ToInt32(page) - 1;
-            int pageSize = rows;
-            List<beReporte27> todoListsResults = new List<beReporte27>();
-
-
-            //if (string.IsNullOrEmpty(mes) || string.IsNullOrEmpty(anio))
-            //{
-            /*todoListsResults = ucTablaLista.DataTableToList<beReporte27>(tabla);*/
-            //}
-            //else
-            //{
-            //beReporte29 data = new beReporte29();
-            //data.MesID = Convert.ToInt32(mes);
-            //data.AnioID = Convert.ToInt32(anio);
-            //todoListsResults = consulta.MostrarConsulta(data).ToList();
-            //}
-
-            int totalRecords = todoListsResults.Count();
-            var totalPages = (int)Math.Ceiling((float)totalRecords / (float)rows);
-
-            var jsonData = new
-            {
-                total = totalPages,
-                page,
-                records = totalRecords,
-                rows = todoListsResults
-            };
-            return Json(jsonData, JsonRequestBehavior.AllowGet);
-        }
-
-        public ActionResult Reporte1()
-        {
-            return View();
-        }
-
-        public JsonResult Reporte1Lists(string sidx, string sord, int page, int rows)  //Gets the todo Lists.
-        {
-            int pageIndex = Convert.ToInt32(page) - 1;
-            int pageSize = rows;
-            List<beReporte1> todoListsResults = new List<beReporte1>();
-
-
-            //if (string.IsNullOrEmpty(mes) || string.IsNullOrEmpty(anio))
-            //{
-            /*todoListsResults = ucTablaLista.DataTableToList<beReporte1>(tabla);*/
-            //}
-            //else
-            //{
-            //beReporte29 data = new beReporte29();
-            //data.MesID = Convert.ToInt32(mes);
-            //data.AnioID = Convert.ToInt32(anio);
-            //todoListsResults = consulta.MostrarConsulta(data).ToList();
-            //}
-
-            int totalRecords = lstReporte.Count();
-            var totalPages = (int)Math.Ceiling((float)totalRecords / (float)rows);
-
-            var jsonData = new
-            {
-                total = totalPages,
-                page,
-                records = totalRecords,
-                rows = lstReporte
-            };
-            return Json(jsonData, JsonRequestBehavior.AllowGet);
-        }
-
-        public ActionResult Reporte2()
-        {
-            return View();
-        }
-
-        public JsonResult Reporte2Lists(string sidx, string sord, int page, int rows)  //Gets the todo Lists.
-        {
-            int pageIndex = Convert.ToInt32(page) - 1;
-            int pageSize = rows;
-            List<beReporte2> todoListsResults = new List<beReporte2>();
-
-
-            //if (string.IsNullOrEmpty(mes) || string.IsNullOrEmpty(anio))
-            //{
-            /*todoListsResults = ucTablaLista.DataTableToList<beReporte2>(tabla);*/
-            //}
-            //else
-            //{
-            //beReporte29 data = new beReporte29();
-            //data.MesID = Convert.ToInt32(mes);
-            //data.AnioID = Convert.ToInt32(anio);
-            //todoListsResults = consulta.MostrarConsulta(data).ToList();
-            //}
-
-            int totalRecords = todoListsResults.Count();
-            var totalPages = (int)Math.Ceiling((float)totalRecords / (float)rows);
-
-            var jsonData = new
-            {
-                total = totalPages,
-                page,
-                records = totalRecords,
-                rows = todoListsResults
-            };
-            return Json(jsonData, JsonRequestBehavior.AllowGet);
-        }
-        
-        public ActionResult Reporte9()
-        {
-            return View();
-        }
-
-        public JsonResult Reporte9Lists(string sidx, string sord, int page, int rows)  //Gets the todo Lists.
-        {
-            int pageIndex = Convert.ToInt32(page) - 1;
-            int pageSize = rows;
-            List<beReporte9> todoListsResults = new List<beReporte9>();
-
-
-            //if (string.IsNullOrEmpty(mes) || string.IsNullOrEmpty(anio))
-            //{
-            /*todoListsResults = ucTablaLista.DataTableToList<beReporte9>(tabla);*/
-            //}
-            //else
-            //{
-            //beReporte29 data = new beReporte29();
-            //data.MesID = Convert.ToInt32(mes);
-            //data.AnioID = Convert.ToInt32(anio);
-            //todoListsResults = consulta.MostrarConsulta(data).ToList();
-            //}
-
-            int totalRecords = todoListsResults.Count();
-            var totalPages = (int)Math.Ceiling((float)totalRecords / (float)rows);
-
-            var jsonData = new
-            {
-                total = totalPages,
-                page,
-                records = totalRecords,
-                rows = todoListsResults
-            };
-            return Json(jsonData, JsonRequestBehavior.AllowGet);
         }
 
     }

@@ -16,8 +16,6 @@ var myLineChart = new Chart(ctx,
         success: OnSuccess_,
         error: OnErrorCall_
     });
-
-
  {
   type: 'line',
   data: {

@@ -18,7 +18,19 @@
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="myTable" width="100%" cellspacing="0" style="text-align: center; font-size: 15px;">
+            @*<table cellspacing="5" cellpadding="5" border="0">
+                <tbody>
+                    <tr>
+                        <td>Minimum age:</td>
+                        <td><input type="text" id="min" name="min"></td>
+                    </tr>
+                    <tr>
+                        <td>Maximum age:</td>
+                        <td><input type="text" id="max" name="max"></td>
+                    </tr>
+                </tbody>
+            </table>*@
+            <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
                 <thead>
                     <tr>
                         <th>Periodo</th>
@@ -29,8 +41,18 @@
                         <th>Cantidad</th>
                     </tr>
                 </thead>
+                <tfoot>
+                    <tr>
+                        <th>Periodo</th>
+                        <th>PeriodoOrd</th>
+                        <th>Mes</th>
+                        <th>Anio</th>
+                        <th>TipoVenta</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </tfoot>
             </table>
-            <input type="button" id="btnMostrar" value="Mostrar" onclick=" location.href = '/Charts/ChartsView' " />
+            @*<input type="button" id="btnMostrar" value="Mostrar" onclick=" location.href = '/Charts/ChartsView' " />*@
         </div>
     </div>
     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
@@ -40,6 +62,7 @@
 </p>
 <script src="~/Assets/vendor/jquery/jquery.min.js"></script>
 <script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -80,7 +103,52 @@
                     "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
                     "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                 }
-            }
+            },
         });
+
+        $('#myTable tfoot th').each(function () {
+            var title = $(this).text();
+            $(this).html('<input type="text" placeholder="Buscar ' + title + '" style="width:150px;"/>');
+        });
+
+        // DataTable
+        var table = $('#myTable').DataTable();
+
+        // Apply the search
+        table.columns().every(function () {
+            var that = this;
+
+            $('input', this.footer()).on('keyup change', function () {
+                if (that.search() !== this.value) {
+                    that
+                        .search(this.value)
+                        .draw();
+                }
+            });
+        });
+//        $.fn.dataTable.ext.search.push(
+//    function (settings, data, dataIndex) {
+//        var min = parseInt($('#min').val(), 10);
+//        var max = parseInt($('#max').val(), 10);
+//        var age = parseFloat(data[5]) || 0; // use data for the age column
+
+//        if ((isNaN(min) && isNaN(max)) ||
+//             (isNaN(min) && age <= max) ||
+//             (min <= age && isNaN(max)) ||
+//             (min <= age && age <= max)) {
+//            return true;
+//        }
+//        return false;
+//    }
+//);
+
+//        $(document).ready(function () {
+//            var table = $('#myTable').DataTable();
+
+//            // Event listener to the two range filtering inputs to redraw on input
+//            $('#min, #max').keyup(function () {
+//                table.draw();
+//            });
+//        });
     });
 </script>

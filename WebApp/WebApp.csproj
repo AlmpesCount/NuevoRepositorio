@@ -1910,6 +1910,14 @@
     <Content Include="Views\Charts\ChartsView.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte15.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte16.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte19.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte20.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte21.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte22.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte25.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte5.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte7.cshtml" />
+    <Content Include="Views\ConsultaReporte\Reporte8.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

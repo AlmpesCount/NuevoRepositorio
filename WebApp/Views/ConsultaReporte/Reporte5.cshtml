@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Reporte 2";
+    ViewBag.Title = "Reporte 5";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -14,39 +14,61 @@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-table"></i>
-        Informe de Reporte Nro2
+        Informe de Reporte Nro5
     </div>
     <div class="card-body">
         <div class="table-responsive">
             <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
                 <thead>
                     <tr>
-                        <th>FRecep</th>
-                        <th>Zona</th>
-                        <th>NroVenta</th>
-                        <th>NroVenValida</th>
-                        <th>BBDD</th>
-                        <th>RecorridoReal</th>
-                        <th>CETReal</th>
-                        <th>Recorrido</th>
-                        <th>CET</th>
-                        <th>Indecopi</th>
-                        <th>RetiroLead</th>
+                        <th>TipoMes</th>
+                        <th>EstadoVer</th>
+                        <th>Mes</th>
+                        <th>DNI</th>
+                        <th>Cliente</th>
+                        <th>Nro Solicitud</th>
+                        <th>FechaVenta</th>
+                        <th>Ver</th>
+                        <th>Descripcion</th>
+                        <th>ST3</th>
+                        <th>ST1</th>
+                        <th>Glosa</th>
+                        <th>Promotor</th>
+                        <th>Supervisor</th>
+                        <th>Estado Final</th>
+                        <th>RT95FACT</th>
+                        <th>Estado</th>
+                        <th>F_Ini</th>
+                        <th>Turno</th>
+                        <th>Horas</th>
+                        <th>Estado de Envio</th>
+                        <th>Comision</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>FRecep</th>
-                        <th>Zona</th>
-                        <th>NroVenta</th>
-                        <th>NroVenValida</th>
-                        <th>BBDD</th>
-                        <th>RecorridoReal</th>
-                        <th>CETReal</th>
-                        <th>Recorrido</th>
-                        <th>CET</th>
-                        <th>Indecopi</th>
-                        <th>RetiroLead</th>
+                        <th>TipoMes</th>
+                        <th>EstadoVer</th>
+                        <th>Mes</th>
+                        <th>DNI</th>
+                        <th>Cliente</th>
+                        <th>Nro Solicitud</th>
+                        <th>FechaVenta</th>
+                        <th>Ver</th>
+                        <th>Descripcion</th>
+                        <th>ST3</th>
+                        <th>ST1</th>
+                        <th>Glosa</th>
+                        <th>Promotor</th>
+                        <th>Supervisor</th>
+                        <th>Estado Final</th>
+                        <th>RT95FACT</th>
+                        <th>Estado</th>
+                        <th>F_Ini</th>
+                        <th>Turno</th>
+                        <th>Horas</th>
+                        <th>Estado de Envio</th>
+                        <th>Comision</th>
                     </tr>
                 </tfoot>
             </table>
@@ -65,22 +87,33 @@
     $(document).ready(function () {
         $('#myTable').DataTable({
             "ajax": {
-                "url": "/consultareporte/cargarreporte2",
+                "url": "/consultareporte/cargarreporte5",
                 "type": "GET",
                 "datatype": "json"
             },
             "columns": [
-                { "data": "FRecep", "autoWidth": true },
-                { "data": "Zona", "autoWidth": true },
-                { "data": "NroVenta", "autoWidth": true },
-                { "data": "NroVenValida", "autoWidth": true },
-                { "data": "BBDD", "autoWidth": true },
-                { "data": "RecorridoReal", "autoWidth": true },
-                { "data": "CETReal", "autoWidth": true },
-                { "data": "Recorrido", "autoWidth": true },
-                { "data": "CET", "autoWidth": true },
-                { "data": "Indecopi", "autoWidth": true },
-                { "data": "RetiroLead", "autoWidth": true }
+                { "data": "TipoMes", "autoWidth": true },
+                { "data": "EstadoVer", "autoWidth": true },
+                { "data": "Mes", "autoWidth": true },
+                { "data": "DNI", "autoWidth": true },
+                { "data": "Cliente", "autoWidth": true },
+                { "data": "NroSolicitud", "autoWidth": true },
+                { "data": "FechaVenta", "autoWidth": true },
+                { "data": "Ver", "autoWidth": true },
+                { "data": "Descripcion", "autoWidth": true },
+                { "data": "ST3", "autoWidth": true },
+                { "data": "ST1", "autoWidth": true },
+                { "data": "Glosa", "autoWidth": true },
+                { "data": "Promotor", "autoWidth": true },
+                { "data": "Supervisor", "autoWidth": true },
+                { "data": "EstadoFinal", "autoWidth": true },
+                { "data": "RT95FACT", "autoWidth": true },
+                { "data": "Estado", "autoWidth": true },
+                { "data": "F_Ini", "autoWidth": true },
+                { "data": "Turno", "autoWidth": true },
+                { "data": "Horas", "autoWidth": true },
+                { "data": "EstadoEnvio", "autoWidth": true },
+                { "data": "Comision", "autoWidth": true }
             ],
             "language": {
                 "sProcessing": "Procesando...",

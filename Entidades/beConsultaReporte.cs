@@ -45,19 +45,6 @@ namespace Entidades
         public int DURACION_SEG { get; set; }
     }
 
-    public class beReporte28
-    {
-        public string DNI { get; set; }
-        public string CLIENTE { get; set; }
-        public string PROMOTOR { get; set; }
-        public string FECHA_VENTA { get; set; }
-        public string FECHA_ACTU_BO { get; set; }
-        public string ESTADO_BO { get; set; }
-        public string COMENTARIO { get; set; }
-        public string AUDITOR { get; set; }
-        public string SUPERVISOR { get; set; }
-    }
-
     public class beReporte27
     {
         public string Periodo { get; set; }
@@ -102,23 +89,78 @@ namespace Entidades
 
         public string Zona { get; set; }
 
-        public int NroVenta { get; set; }
+        public string NroVenta { get; set; }
 
-        public int NroVenValida { get; set; }
+        public string NroVenValida { get; set; }
 
-        public int BBDD { get; set; }
+        public string BBDD { get; set; }
 
-        public int RecorridoReal { get; set; }
+        public string RecorridoReal { get; set; }
 
-        public int CETReal { get; set; }
+        public string CETReal { get; set; }
 
-        public int Recorrido { get; set; }
+        public string Recorrido { get; set; }
 
-        public int CET { get; set; }
+        public string CET { get; set; }
 
-        public int Indecopi { get; set; }
+        public string Indecopi { get; set; }
 
-        public int RetiroLead { get; set; }
+        public string RetiroLead { get; set; }
+    }
+
+    public class beReporte5
+    {
+        public string TipoMes { get; set; }
+        public string EstadoVer { get; set; }
+        public int Mes { get; set; }
+        public string DNI { get; set; }
+        public string Cliente { get; set; }
+        public string NroSolicitud { get; set; }
+        public string FechaVenta { get; set; }
+        public string Ver { get; set; }
+        public string Descripcion { get; set; }
+        public string ST3 { get; set; }
+        public string ST1 { get; set; }
+        public string Glosa { get; set; }
+        public string Promotor { get; set; }
+        public string Supervisor { get; set; }
+        public string EstadoFinal { get; set; }
+        public string RT95FACT { get; set; }
+        public string Estado { get; set; }
+        public string F_Ini { get; set; }
+        public string Turno { get; set; }
+        public int Horas { get; set; }
+        public string EstadoEnvio { get; set; }
+        public string Comision { get; set; }
+    }
+
+    public class beReporte7
+    {
+        public string Supervisor { get; set; }
+        public string Promotor { get; set; }
+        public string FechaVenta { get; set; }
+        public string Mes { get; set; }
+        public string Anio { get; set; }
+        public string EstadoFinal { get; set; }
+        public string Cliente { get; set; }
+        public string DNI { get; set; }
+    }
+
+    public class beReporte8
+    {
+        public string Periodo { get; set; }
+        public string F_Recep { get; set; }
+        public string Fecha { get; set; }
+        public string DiaSemana { get; set; }
+        public string Semana { get; set; }
+        public string DNI { get; set; }
+        public string Celular { get; set; }
+        public string Supervisor { get; set; }
+        public string Tipo { get; set; }
+        public string Origen { get; set; }
+        public string Zona { get; set; }
+        public string Cant { get; set; }
+        public string Tipo2 { get; set; }
     }
 
     public class beReporte9
@@ -126,8 +168,8 @@ namespace Entidades
         public string Periodo { get; set; }
         public string Resultado { get; set; }
         public int Cuenta { get; set; }
-        public int año { get; set; }
-        public int mes { get; set; }
+        public int Anio { get; set; }
+        public int Mes { get; set; }
     }
 
     public class beReporte11 {
@@ -209,6 +251,82 @@ namespace Entidades
         public string Departamento { get; set; }
         public string Activacion { get; set; }
         public string EstadoAnalisis { get; set; }
+        public string Estado { get; set; }
+        public string Plen { get; set; }
+        public string EstadoGestion { get; set; }
+        public string Anio_Mes_AP { get; set; }
+        public string X_Grupo { get; set; }
+        public string DNI { get; set; }
+        public string NrSol { get; set; }
+        public string Cliente { get; set; }
+        public string Gestor { get; set; }
+        public string FeedBack { get; set; }
+        public string Observacion { get; set; }
+        public string FechaGestion { get; set; }
+        public string FEntrega { get; set; }
+    }
 
+    public class beReporte20
+    {
+        public string Promotor { get; set; }
+        public string FechaVenta { get; set; }
+        public string Auditor { get; set; }
+        public string EstadoFinal {get;set;}
+        public string Cliente { get; set; }
+        public string DNI { get; set; }
+    }
+
+    public class beReporte21
+    {
+        public string Promotor { get; set; }
+        public string FechaVenta { get; set; }
+        public string Auditor { get; set; }
+        public string EstadoFinal { get; set; }
+        public string DNI { get; set; }
+        public string FechaTabla { get; set; }
+        public string Dia { get; set; }
+
+    }
+
+    public class beReporte22
+    {
+        public int ID { get; set; }
+        public string Fecha { get; set; }
+        public int Cantidad { get; set; }
+        public string Tipo { get; set; }
+        public int Acumulado { get; set; }
+        public int Promedio { get; set; }
+        public string Dia { get; set; }
+        public string Periodo { get; set; }
+        public string PeriodoOrd { get; set; }
+    }
+
+    public class beReporte25
+    {
+        public string Periodo { get; set; }
+        public string F_Recep { get; set; }
+        public string NroVenta { get; set; }
+        public string NroVenValida { get; set; }
+        public string LlamadasTotal { get; set; }
+        public string BBDDAcumulado { get; set; }
+        public string LlamadasUnico { get; set; }
+        public string CETUnico { get; set; }
+        public string RetiroLeads { get; set; }
+        public string CETTiempo { get; set; }
+        public string VentasTiempo { get; set; }
+    
+    }
+
+    public class beReporte28
+    {
+        public string DNI { get; set; }
+        public string CLIENTE { get; set; }
+        public string PROMOTOR { get; set; }
+        public string FECHA_VENTA { get; set; }
+        public string FECHA_ACTU_BO { get; set; }
+        public string ESTADO_BO { get; set; }
+        public string COMENTARIO { get; set; }
+        public string AUDITOR { get; set; }
+        public string SUPERVISOR { get; set; }
     }
 }

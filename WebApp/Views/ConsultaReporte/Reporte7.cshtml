@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Reporte 2";
+    ViewBag.Title = "Reporte 7";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -14,39 +14,33 @@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-table"></i>
-        Informe de Reporte Nro2
+        Informe de Reporte Nro7
     </div>
     <div class="card-body">
         <div class="table-responsive">
             <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
                 <thead>
                     <tr>
-                        <th>FRecep</th>
-                        <th>Zona</th>
-                        <th>NroVenta</th>
-                        <th>NroVenValida</th>
-                        <th>BBDD</th>
-                        <th>RecorridoReal</th>
-                        <th>CETReal</th>
-                        <th>Recorrido</th>
-                        <th>CET</th>
-                        <th>Indecopi</th>
-                        <th>RetiroLead</th>
+                        <th>Supervisor</th>
+                        <th>Promotor</th>
+                        <th>Fecha Venta</th>
+                        <th>Mes</th>
+                        <th>Año</th>
+                        <th>Estado Final</th>
+                        <th>Cliente</th>
+                        <th>DNI</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>FRecep</th>
-                        <th>Zona</th>
-                        <th>NroVenta</th>
-                        <th>NroVenValida</th>
-                        <th>BBDD</th>
-                        <th>RecorridoReal</th>
-                        <th>CETReal</th>
-                        <th>Recorrido</th>
-                        <th>CET</th>
-                        <th>Indecopi</th>
-                        <th>RetiroLead</th>
+                        <th>Supervisor</th>
+                        <th>Promotor</th>
+                        <th>Fecha Venta</th>
+                        <th>Mes</th>
+                        <th>Año</th>
+                        <th>Estado Final</th>
+                        <th>Cliente</th>
+                        <th>DNI</th>
                     </tr>
                 </tfoot>
             </table>
@@ -65,22 +59,19 @@
     $(document).ready(function () {
         $('#myTable').DataTable({
             "ajax": {
-                "url": "/consultareporte/cargarreporte2",
+                "url": "/consultareporte/cargarreporte7",
                 "type": "GET",
                 "datatype": "json"
             },
             "columns": [
-                { "data": "FRecep", "autoWidth": true },
-                { "data": "Zona", "autoWidth": true },
-                { "data": "NroVenta", "autoWidth": true },
-                { "data": "NroVenValida", "autoWidth": true },
-                { "data": "BBDD", "autoWidth": true },
-                { "data": "RecorridoReal", "autoWidth": true },
-                { "data": "CETReal", "autoWidth": true },
-                { "data": "Recorrido", "autoWidth": true },
-                { "data": "CET", "autoWidth": true },
-                { "data": "Indecopi", "autoWidth": true },
-                { "data": "RetiroLead", "autoWidth": true }
+                { "data": "Supervisor", "autoWidth": true },
+                { "data": "Promotor", "autoWidth": true },
+                { "data": "FechaVenta", "autoWidth": true },
+                { "data": "Mes", "autoWidth": true },
+                { "data": "Anio", "autoWidth": true },
+                { "data": "EstadoFinal", "autoWidth": true },
+                { "data": "Cliente", "autoWidth": true },
+                { "data": "DNI", "autoWidth": true }
             ],
             "language": {
                 "sProcessing": "Procesando...",

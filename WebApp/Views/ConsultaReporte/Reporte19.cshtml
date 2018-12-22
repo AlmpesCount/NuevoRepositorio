@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Reporte 9";
+    ViewBag.Title = "Reporte 19";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -14,30 +14,23 @@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-table"></i>
-        Informe de Reporte Nro9
+        Informe de Reporte Nro19
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
+            <table class="table table-bordered" id="myTable" width="100%" cellspacing="0" style="text-align: center; font-size: 15px;">
                 <thead>
                     <tr>
-                        <th>Periodo</th>
-                        <th>Resultado</th>
-                        <th>Cuenta</th>
-                        <th>Año</th>
-                        <th>Mes</th>
+                        <th>TIPO ZONA</th><th>ZONA</th><th>DEPARTAMENTO</th>
+                        <th>ACTIVACION</th><th>ESTADO_ANALISIS</th><th>ESTADO</th>
+                        <th>PLEN</th><th>ESTADO_GESTION</th><th>AÑO_MES_AP</th>
+                        <th>X_GRUPO</th><th>DNI</th><th>NRSOL</th><th>CLIENTE</th>
+                        <th>GESTOR</th><th>FEEDBACK</th><th>OBSERVACION</th>
+                        <th>FECHA DE GESTION</th><th>FENTREGA</th>
                     </tr>
                 </thead>
-                <tfoot>
-                    <tr>
-                        <th>Periodo</th>
-                        <th>Resultado</th>
-                        <th>Cuenta</th>
-                        <th>Año</th>
-                        <th>Mes</th>
-                    </tr>
-                </tfoot>
             </table>
+            <input type="button" id="btnMostrar" value="Mostrar" onclick=" location.href = '/Charts/ChartsView' " />
         </div>
     </div>
     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
@@ -48,21 +41,33 @@
 <script src="~/Assets/vendor/jquery/jquery.min.js"></script>
 <script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
 
-
 <script type="text/javascript">
     $(document).ready(function () {
         $('#myTable').DataTable({
             "ajax": {
-                "url": "/consultareporte/cargarreporte9",
+                "url": "/consultareporte/cargarreporte19",
                 "type": "GET",
                 "datatype": "json"
             },
             "columns": [
-                { "data": "Periodo", "autoWidth": true },
-                { "data": "Resultado", "autoWidth": true },
-                { "data": "Cuenta", "autoWidth": true },
-                { "data": "Anio", "autoWidth": true },
-                { "data": "Mes", "autoWidth": true }
+                { "data": "TipoZona", "autoWidth": true },
+                { "data": "Zona", "autoWidth": true },
+                { "data": "Departamento", "autoWidth": true },
+                { "data": "Activacion", "autoWidth": true },
+                { "data": "EstadoAnalisis", "autoWidth": true },
+                { "data": "Estado", "autoWidth": true },
+                { "data": "Plen", "autoWidth": true },
+                { "data": "EstadoGestion", "autoWidth": true },
+                { "data": "Anio_Mes_AP", "autoWidth": true },
+                { "data": "X_Grupo", "autoWidth": true },
+                { "data": "DNI", "autoWidth": true },
+                { "data": "NrSol", "autoWidth": true },
+                { "data": "Cliente", "autoWidth": true },
+                { "data": "Gestor", "autoWidth": true },
+                { "data": "FeedBack", "autoWidth": true },
+                { "data": "Observacion", "autoWidth": true },
+                { "data": "FechaGestion", "autoWidth": true },
+                { "data": "FEntrega", "autoWidth": true}
             ],
             "language": {
                 "sProcessing": "Procesando...",
@@ -87,26 +92,7 @@
                     "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
                     "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                 }
-            },
-        });
-
-        $('#myTable tfoot th').each(function () {
-            var title = $(this).text();
-            $(this).html('<input type="text" placeholder="Buscar ' + title + '" style="width:150px;"/>');
-        });
-
-        var table = $('#myTable').DataTable();
-
-        table.columns().every(function () {
-            var that = this;
-
-            $('input', this.footer()).on('keyup change', function () {
-                if (that.search() !== this.value) {
-                    that
-                        .search(this.value)
-                        .draw();
-                }
-            });
+            }
         });
     });
 </script>

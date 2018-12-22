@@ -2,6 +2,7 @@
     ViewBag.Title = "Reporte 1";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
@@ -13,11 +14,62 @@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-table"></i>
-        Informe de Reporte
+        Informe de Reporte Nro1
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            @Html.Partial("ConsultaReportePartial")
+            <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
+                <thead>
+                    <tr>
+                        <th>Zona</th>
+                        <th>Semana</th>
+                        <th>DiaSemana</th>
+                        <th>Fecha</th>
+                        <th>Nro Venta</th>
+                        <th>N.Ven. Valida</th>
+                        <th>Dotacion</th>
+                        <th>Recorrido por Dia</th>
+                        <th>Contacto Efectivo con Titular</th>
+                        <th>Contacto con Tercero Relacionado</th>
+                        <th>Recorrido Real</th>
+                        <th>CET Real</th>
+                        <th>BBDD Asignada</th>
+                        <th>Recorrido por Dia Tiempo</th>
+                        <th>CET Tiempo</th>
+                        <th>CTR Tiempo</th>
+                        <th>Ventas Tiempo</th>
+                        <th>Recorrido Unico</th>
+                        <th>CET Unico</th>
+                        <th>Indecopi</th>
+                        <th>Retiro Leads</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Zona</th>
+                        <th>Semana</th>
+                        <th>DiaSemana</th>
+                        <th>Fecha</th>
+                        <th>Nro Venta</th>
+                        <th>N.Ven. Valida</th>
+                        <th>Dotacion</th>
+                        <th>Recorrido por Dia</th>
+                        <th>Contacto Efectivo con Titular</th>
+                        <th>Contacto con Tercero Relacionado</th>
+                        <th>Recorrido Real</th>
+                        <th>CET Real</th>
+                        <th>BBDD Asignada</th>
+                        <th>Recorrido por Dia Tiempo</th>
+                        <th>CET Tiempo</th>
+                        <th>CTR Tiempo</th>
+                        <th>Ventas Tiempo</th>
+                        <th>Recorrido Unico</th>
+                        <th>CET Unico</th>
+                        <th>Indecopi</th>
+                        <th>Retiro Leads</th>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
     </div>
     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
@@ -25,71 +77,84 @@
 <p class="small text-center text-muted my-5">
     <em>More table examples coming soon...</em>
 </p>
-
-<script src="~/Assets/jqgrid/js/jquery-1.11.0.min.js"></script>
-<script src="~/Assets/jqgrid/js/jquery.jqGrid.min.js"></script>
-<script src="~/Assets/jqgrid/js/i18n/grid.locale-es.js"></script>
-<script src="~/Scripts/jquery-ui-1.10.4.min.js"></script>
-<link href="~/Assets/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
-<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+<script src="~/Assets/vendor/jquery/jquery.min.js"></script>
+<script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
 
 
 <script type="text/javascript">
-    $("#grid").jqGrid({
-        url: "/ConsultaReporte/Reporte1Lists",
-        datatype: 'json',
-        mtype: 'Get',
-        colNames: ['Zona', 'Semana', 'DiaSemana', 'Fecha',
-                   'NroVenta', 'NroVenValida', 'Dotacion',
-                   'RecorridoDia', 'ContactoEfectivoTitular', 'ContactoTerceroRelacionado',
-                   'RecorridoReal', 'CETReal', 'BBDDAsignada',
-                   'RecorridoDiaTiempo', 'CETTiempo', 'CTRTiempo',
-                   'VentasTiempo', 'RecorridoUnico', 'CETUnico',
-                    'Indecopi', 'RetiroLeads'],
-        colModel: [
-        { name: 'Zona', index: 'Zona', width: 100, align: 'center' },
-        { name: 'Semana', index: 'Semana', width: 100, align: 'center' },
-        { name: 'DiaSemana', index: 'DiaSemana', width: 100, align: 'center' },
-        { name: 'Fecha', index: 'Fecha', width: 100, align: 'center', formatter: 'date', formatoptions: { newformat: 'd/m/Y' }, datefmt: 'Y-M-d' },
-        { name: 'NroVenta', index: 'NroVenta', width: 100, align: 'center', },
-        { name: 'NroVenValida', index: 'NroVenValida', width: 100, align: 'center' },
-        { name: 'Donacion', index: 'Donacion', width: 100, align: 'center' },
-        { name: 'RecorridoDia', index: 'Recorrido por Dia', width: 100, align: 'center' },
-        { name: 'ContactoEfectivoTitular', index: 'Contacto Efectivo con Titular', width: 100, align: 'center' },
-        { name: 'ContactoTerceroRelacionado', index: 'Contacto con Tercero Relacionado', width: 100, align: 'center' },
-        { name: 'RecorridoReal', index: 'RecorridoReal', width: 100, align: 'center' },
-        { name: 'CETReal', index: 'CETReal', width: 100, align: 'center' },
-        { name: 'BBDDAsignada', index: 'BBDDAsignada', width: 100, align: 'center' },
-        { name: 'RecorridoDiaTiempo', index: 'Recorrido por Dia Tiempo', width: 100, align: 'center' },
-        { name: 'CETTiempo', index: 'CETTiempo', width: 100, align: 'center' },
-        { name: 'CTRTiempo', index: 'CTRTiempo', width: 100, align: 'center' },
-        { name: 'VentasTiempo', index: 'VentasTiempo', width: 100, align: 'center' },
-        { name: 'RecorridoUnico', index: 'RecorridoUnico', width: 100, align: 'center' },
-        { name: 'CETUnico', index: 'CETUnico', width: 100, align: 'center' },
-        { name: 'Indecopi', index: 'Indecopi', width: 100, align: 'center' },
-        { name: 'RetiroLeads', index: 'RetiroLeads', width: 100, align: 'center' }
-        ],
-        pager: jQuery('#pager'),
-        rowNum: 10,
-        rowList: [10, 150, 300],
-        height: '100%',
-        viewrecords: true,
-        caption: 'Todo List',
-        loadonce: false,
-        emptyrecords: 'No records to display',
-        jsonReader: {
-            root: "rows",
-            page: "page",
-            total: "total",
-            records: "records",
-            repeatitems: false,
-            Id: "0"
-        },
-        autowidth: true,
-        multiselect: false
+    $(document).ready(function () {
+        $('#myTable').DataTable({
+            "ajax": {
+                "url": "/consultareporte/cargarreporte1",
+                "type": "GET",
+                "datatype": "json"
+            },
+            "columns": [
+                { "data": "Zona", "autoWidth": true },
+                { "data": "Semana", "autoWidth": true },
+                { "data": "DiaSemana", "autoWidth": true },
+                { "data": "Fecha", "autoWidth": true },
+                { "data": "NroVenta", "autoWidth": true },
+                { "data": "NroVeValida", "autoWidth": true },
+                { "data": "Dotacion", "autoWidth": true },
+                { "data": "RecorridoDia", "autoWidth": true },
+                { "data": "ContactoEfectivoTitular", "autoWidth": true },
+                { "data": "ContactoTerceroRelacionado", "autoWidth": true },
+                { "data": "RecorridoReal", "autoWidth": true },
+                { "data": "CETReal", "autoWidth": true },
+                { "data": "BBDDAsignada", "autoWidth": true },
+                { "data": "RecorridoDiaTiempo", "autoWidth": true },
+                { "data": "CETTiempo", "autoWidth": true },
+                { "data": "CTRTiempo", "autoWidth": true },
+                { "data": "VentasTiempo", "autoWidth": true },
+                { "data": "RecorridoUnico", "autoWidth": true },
+                { "data": "CETUnico", "autoWidth": true },
+                { "data": "Indecopi", "autoWidth": true },
+                { "data": "RetiroLeads", "autoWidth": true }
+            ],
+            "language": {
+                "sProcessing": "Procesando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "No se encontraron resultados",
+                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix": "",
+                "sSearch": "Buscar:",
+                "sUrl": "",
+                "sInfoThousands": ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                }
+            },
+        });
+
+        $('#myTable tfoot th').each(function () {
+            var title = $(this).text();
+            $(this).html('<input type="text" placeholder="Buscar ' + title + '" style="width:150px;"/>');
+        });
+
+        var table = $('#myTable').DataTable();
+
+        table.columns().every(function () {
+            var that = this;
+
+            $('input', this.footer()).on('keyup change', function () {
+                if (that.search() !== this.value) {
+                    that
+                        .search(this.value)
+                        .draw();
+                }
+            });
+        });
     });
-
 </script>
-
-
-
