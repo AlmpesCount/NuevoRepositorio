@@ -33,26 +33,26 @@
             <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
                 <thead>
                     <tr>
-                        <th>Periodo</th>
                         <th>PeriodoOrd</th>
-                        <th>Mes</th>
-                        <th>Anio</th>
-                        <th>TipoVenta</th>
-                        <th>Cantidad</th>
+                        <th>Periodo</th>
+                        <th>1.Venta Total</th>
+                        <th>3.Venta Aprobada</th>
+                        <th>4.Venta Activada</th>
+                        <th>5.Activadas del Mes</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>Periodo</th>
                         <th>PeriodoOrd</th>
-                        <th>Mes</th>
-                        <th>Anio</th>
-                        <th>TipoVenta</th>
-                        <th>Cantidad</th>
+                        <th>Periodo</th>
+                        <th>1.Venta Total</th>
+                        <th>3.Venta Aprobada</th>
+                        <th>4.Venta Activada</th>
+                        <th>5.Activadas del Mes</th>
                     </tr>
                 </tfoot>
             </table>
-            @*<input type="button" id="btnMostrar" value="Mostrar" onclick=" location.href = '/Charts/ChartsView' " />*@
+            <input type="button" id="btnMostrar" value="Mostrar" onclick=" location.href = '/Charts/ChartsView' " />
         </div>
     </div>
     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
@@ -73,12 +73,12 @@
                 "datatype": "json"
             },
             "columns": [
-                { "data": "Periodo", "autoWidth": true },
                 { "data": "PeriodoOrd", "autoWidth": true },
-                { "data": "Mes", "autoWidth": true },
-                { "data": "Anio", "autoWidth": true },
-                { "data": "TipoVenta", "autoWidth": true },
-                { "data": "Cantidad", "autoWidth": true }
+                { "data": "Periodo", "autoWidth": true },
+                { "data": "VentaTotal", "autoWidth": true },
+                { "data": "VentaAprobada", "autoWidth": true },
+                { "data": "VentaActivada", "autoWidth": true },
+                { "data": "ActivadaMes", "autoWidth": true}
             ],
             "language": {
                 "sProcessing": "Procesando...",

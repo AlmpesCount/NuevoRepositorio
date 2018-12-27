@@ -17,19 +17,13 @@ namespace WebApp.Controllers
             return View();
         }
 
-        public List<beConsultaReporte> CargarChartArea()
+        public JsonResult CargarChartArea()
         {
             List<beConsultaReporte> lstReporte = new List<beConsultaReporte>();
             brConsultaReporte reporte = new brConsultaReporte();
-            beConsultaReporte lista = reporte.MostrarConsulta();
+            lstReporte = reporte.MostrarConsulta().ToList();
 
-            beConsultaReporte entReporte = new beConsultaReporte();
-            entReporte.Mes = lista.Mes;
-            entReporte.Cantidad = lista.Cantidad;
-
-            lstReporte.Add(entReporte);
-
-            return lstReporte;
+            return Json(lstReporte, JsonRequestBehavior.AllowGet);
         }
 	}
 }

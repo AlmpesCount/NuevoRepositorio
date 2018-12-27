@@ -79,3 +79,12 @@ C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Entidades
 C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
 C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Debug\Logica.dll
 C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Debug\Logica.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Logica.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Logica.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Conexion.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Entidades.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Conexion.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Debug\Entidades.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Debug\Logica.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Debug\Logica.pdb

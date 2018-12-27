@@ -96,3 +96,15 @@ C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\EntityF
 C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
 C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Debug\Conexion.dll
 C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Debug\Conexion.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Conexion.dll.config
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Conexion.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Conexion.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Entidades.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\EntityFramework.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\EntityFramework.SqlServer.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\Entidades.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\EntityFramework.xml
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Debug\EntityFramework.SqlServer.xml
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Debug\Conexion.csprojResolveAssemblyReference.cache
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Debug\Conexion.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Debug\Conexion.pdb

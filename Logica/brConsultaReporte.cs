@@ -20,7 +20,7 @@ namespace Logica
             return lista;
         }
 
-        public beConsultaReporte MostrarConsulta()
+        public List<beConsultaReporte> MostrarConsulta()
         {
             daConsultaReporte reporte = new daConsultaReporte();
             var lista = reporte.MostrarConsulta();

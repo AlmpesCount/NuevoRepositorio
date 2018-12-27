@@ -152,12 +152,12 @@ namespace Conexion
                     if(Data.TablaID == 10)
                     {
                         beConsultaReporte conrep = new beConsultaReporte();
-                        conrep.Periodo = rdr["Periodo"].ToString();
                         conrep.PeriodoOrd = rdr["PeriodoOrd"].ToString();
-                        conrep.Mes = rdr["Mes"].ToString();
-                        conrep.Anio = rdr["Anio"].ToString();
-                        conrep.TipoVenta = rdr["TipoVenta"].ToString();
-                        conrep.Cantidad = Convert.ToInt32(rdr["Cantidad"].ToString());
+                        conrep.Periodo = rdr["Periodo"].ToString();
+                        conrep.VentaTotal = rdr["1.Venta Total"].ToString();
+                        conrep.VentaAprobada = rdr["3.Venta Aprobada"].ToString();
+                        conrep.VentaActivada = rdr["4.Venta Activada"].ToString();
+                        conrep.ActivadaMes = rdr["5.Activadas del Mes"].ToString();
 
                         lstReporte.Add(conrep);
                     }
@@ -391,9 +391,9 @@ namespace Conexion
             return DataReporte;
         }*/
 
-        public beConsultaReporte MostrarConsulta()
+        public List<beConsultaReporte> MostrarConsulta()
         {
-            beConsultaReporte conrep = new beConsultaReporte();
+            List<beConsultaReporte> lstConsulta = new List<beConsultaReporte>();
 
             using (SqlConnection con = Conexion.ConexionSql)
             {
@@ -404,16 +404,20 @@ namespace Conexion
 
                 while (rdr.Read())
                 {
-                    conrep.Periodo = rdr["Periodo"].ToString();
+                    beConsultaReporte conrep = new beConsultaReporte();
+
                     conrep.PeriodoOrd = rdr["PeriodoOrd"].ToString();
-                    conrep.Mes = rdr["Mes"].ToString();
-                    conrep.Anio = rdr["Año"].ToString();
-                    conrep.TipoVenta = rdr["TipoVenta"].ToString();
-                    conrep.Cantidad = Convert.ToInt32(rdr["Cantidad"].ToString());
+                    conrep.Periodo = rdr["Periodo"].ToString();
+                    conrep.VentaTotal = rdr["1.Venta Total"].ToString();
+                    conrep.VentaAprobada = rdr["3.Venta Aprobada"].ToString();
+                    conrep.VentaActivada = rdr["4.Venta Activada"].ToString();
+                    conrep.ActivadaMes = rdr["5.Activadas del Mes"].ToString();
+
+                    lstConsulta.Add(conrep);
                 }
                 con.Close();
             }
-            return conrep;
+            return lstConsulta;
         }
     }
 }

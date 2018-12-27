@@ -21,14 +21,12 @@ namespace Entidades
 
     public class beConsultaReporte
     {
-        public string Periodo { get; set; }
         public string PeriodoOrd { get; set; }
-        public string Mes { get; set; }
-        public int MesID { get; set; }
-        public string Anio { get; set; }
-        public int AnioID { get; set; }
-        public string TipoVenta { get; set; }
-        public int Cantidad { get; set; }
+        public string Periodo { get; set; }
+        public string VentaTotal { get; set; }
+        public string VentaAprobada { get; set; }
+        public string VentaActivada { get; set; }
+        public string ActivadaMes { get; set; }
     }
 
     public class beReporte27
