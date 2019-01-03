@@ -13,7 +13,14 @@ namespace WebApp.Controllers
     public class ConsultaReporteController : Controller
     {
         brConsultaReporte consulta = new brConsultaReporte();
+        brModelReport model = new brModelReport();
+
         static List<Object> lstReporte = new List<Object>();
+        static List<beReporte8> FirstPhone = new List<beReporte8>();
+        static List<beReporte8> SecondPhone = new List<beReporte8>();
+        static List<beReporte27> ThirdPhone = new List<beReporte27>();
+        static List<beReporte9> FirstCET = new List<beReporte9>();
+        static List<beReporte2> SecondDay = new List<beReporte2>();
 
         public ActionResult ConsultaReportePrincipal()
         {
@@ -23,14 +30,15 @@ namespace WebApp.Controllers
         [HttpPost]
         public ActionResult MostrarTablaConsulta(beConsultaReportePrincipal Reporte)
         {
-            lstReporte = consulta.TotalTabla(Reporte);
-
             if (Reporte.TablaID == 1)
             {
                 return RedirectToAction("Reporte1", "ConsultaReporte");
             }
             if (Reporte.TablaID == 2)
             {
+                //Esta lista sirve para llenar Vista Reporte2
+                SecondDay = model.Second_ModelDBDay(Reporte);
+
                 return RedirectToAction("Reporte2", "ConsultaReporte");
             }
             if (Reporte.TablaID == 5)
@@ -43,14 +51,24 @@ namespace WebApp.Controllers
             }
             if (Reporte.TablaID == 8)
             {
+                //Este llenado de listas sirve para las distintas tablas del Reporte8
+                FirstPhone = model.First_ModelDBPhone(Reporte);
+                SecondPhone = model.Second_ModelDBPhone(Reporte);
+                ThirdPhone = model.Third_ModelDBPhone(Reporte);
+
                 return RedirectToAction("Reporte8", "ConsultaReporte");
             }
             if (Reporte.TablaID == 9)
             {
+                //Esta lista sirve para llenar Vista Reporte9
+                FirstCET = model.ModelDBCET(Reporte);
+
                 return RedirectToAction("Reporte9", "ConsultaReporte");
             }
             if (Reporte.TablaID == 10)
             {
+                lstReporte = consulta.TotalTabla(Reporte);
+
                 return RedirectToAction("Reporte10", "ConsultaReporte");
             }  
             if (Reporte.TablaID == 11)
@@ -91,6 +109,8 @@ namespace WebApp.Controllers
             }
             if (Reporte.TablaID == 25)
             {
+                lstReporte = consulta.TotalTabla(Reporte);
+
                 return RedirectToAction("Reporte25", "ConsultaReporte");
             }
             if (Reporte.TablaID == 28)
@@ -119,7 +139,7 @@ namespace WebApp.Controllers
 
         public ActionResult CargarReporte2()
         {
-            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+            return Json(new { data = SecondDay }, JsonRequestBehavior.AllowGet);
         }
         public ActionResult Reporte5()
         {
@@ -144,10 +164,21 @@ namespace WebApp.Controllers
             return View();
         }
 
-        public ActionResult CargarReporte8()
+        public ActionResult FirstReport8()
         {
-            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+            return Json(new { data = FirstPhone }, JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult SecondReport8()
+        {
+            return Json(new { data = SecondPhone }, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult ThirdReport8()
+        {
+            return Json(new { data = ThirdPhone }, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult Reporte9()
         {
             return View();
@@ -155,8 +186,9 @@ namespace WebApp.Controllers
 
         public ActionResult CargarReporte9()
         {
-            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+            return Json(new { data = FirstCET }, JsonRequestBehavior.AllowGet);
         }
+
         public ActionResult Reporte10()
         {
             return View();

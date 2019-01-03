@@ -7,3 +7,12 @@ C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\bin\Release\En
 C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Release\Logica.csprojResolveAssemblyReference.cache
 C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Release\Logica.dll
 C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Logica\obj\Release\Logica.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Release\Logica.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Release\Logica.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Release\Conexion.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Release\Entidades.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Release\Conexion.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\bin\Release\Entidades.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Release\Logica.csprojResolveAssemblyReference.cache
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Release\Logica.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Logica\obj\Release\Logica.pdb

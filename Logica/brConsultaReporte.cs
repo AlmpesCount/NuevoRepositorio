@@ -11,28 +11,27 @@ namespace Logica
 {
     public class brConsultaReporte
     {
-        private daConsultaReporte reporteDAL = new daConsultaReporte();
+        daConsultaReporte reporte = new daConsultaReporte();
+        daModelReport model = new daModelReport();
 
         public List<Object> TotalTabla(beConsultaReportePrincipal Data)
         {
-            daConsultaReporte reporte = new daConsultaReporte();
             var lista = reporte.TotalTabla(Data);
             return lista;
         }
 
         public List<beConsultaReporte> MostrarConsulta()
         {
-            daConsultaReporte reporte = new daConsultaReporte();
             var lista = reporte.MostrarConsulta();
             return lista;
         }
 
-        /*public DataTable MostrarTablaConsulta(beConsultaReportePrincipal Data)
-        {
-            DataTable DataReporte = new DataTable();
-            DataReporte = reporteDAL.MostrarTablaConsulta(Data);
+        //public DataTable MostrarTablaConsulta(beConsultaReportePrincipal Data)
+        //{
+        //    DataTable DataReporte = new DataTable();
+        //    DataReporte = reporte.MostrarTablaConsulta(Data);
 
-            return DataReporte;
-        }*/
+        //    return DataReporte;
+        //}
     }
 }

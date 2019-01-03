@@ -18,25 +18,26 @@
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
+            <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 12px; width: 100%;">
                 <thead>
                     <tr>
                         <th>Periodo</th>
-                        <th>Resultado</th>
-                        <th>Cuenta</th>
                         <th>Año</th>
-                        <th>Mes</th>
+                        <th>00.VENTA CRM</th>
+                        <th>01.CLIENTE ACEPTA OFERTA</th>
+                        <th>02.NO DESEA POR OFERTA</th>
+                        <th>03.NO DESEA B POR TASAS</th>
+                        <th>04.NO CALIFICA</th>
+                        <th>05.MEJOR OFERTA OTRA ENTIDAD</th>
+                        <th>06.MALA  EXPERIENCIA</th>
+                        <th>07.CLIENTE YA CUENTA CON OFERTA</th>
+                        <th>08.CLIENTE SE ACERCARA AGENCIA</th>
+                        <th>09.CLIENTE NO DESEA NO INSISTIR</th>
+                        <th>11.CITA TELEFONICA CON TITULAR</th>
+                        <th>12.CITA TELEFONICA CON TITULAR</th>
+                        <th>13.CITA TELEFONICA CON TITULAR</th>
                     </tr>
                 </thead>
-                <tfoot>
-                    <tr>
-                        <th>Periodo</th>
-                        <th>Resultado</th>
-                        <th>Cuenta</th>
-                        <th>Año</th>
-                        <th>Mes</th>
-                    </tr>
-                </tfoot>
             </table>
         </div>
     </div>
@@ -47,66 +48,4 @@
 </p>
 <script src="~/Assets/vendor/jquery/jquery.min.js"></script>
 <script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
-
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#myTable').DataTable({
-            "ajax": {
-                "url": "/consultareporte/cargarreporte9",
-                "type": "GET",
-                "datatype": "json"
-            },
-            "columns": [
-                { "data": "Periodo", "autoWidth": true },
-                { "data": "Resultado", "autoWidth": true },
-                { "data": "Cuenta", "autoWidth": true },
-                { "data": "Anio", "autoWidth": true },
-                { "data": "Mes", "autoWidth": true }
-            ],
-            "language": {
-                "sProcessing": "Procesando...",
-                "sLengthMenu": "Mostrar _MENU_ registros",
-                "sZeroRecords": "No se encontraron resultados",
-                "sEmptyTable": "Ningún dato disponible en esta tabla",
-                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sInfoPostFix": "",
-                "sSearch": "Buscar:",
-                "sUrl": "",
-                "sInfoThousands": ",",
-                "sLoadingRecords": "Cargando...",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast": "Último",
-                    "sNext": "Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "oAria": {
-                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                }
-            },
-        });
-
-        $('#myTable tfoot th').each(function () {
-            var title = $(this).text();
-            $(this).html('<input type="text" placeholder="Buscar ' + title + '" style="width:150px;"/>');
-        });
-
-        var table = $('#myTable').DataTable();
-
-        table.columns().every(function () {
-            var that = this;
-
-            $('input', this.footer()).on('keyup change', function () {
-                if (that.search() !== this.value) {
-                    that
-                        .search(this.value)
-                        .draw();
-                }
-            });
-        });
-    });
-</script>
+<script src="~/Assets/ScriptReports/report_9.js"></script>

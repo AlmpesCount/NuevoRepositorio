@@ -5,3 +5,15 @@ C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\bin\Release\
 C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Release\Conexion.csprojResolveAssemblyReference.cache
 C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Release\Conexion.dll
 C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Conexion\obj\Release\Conexion.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Release\Conexion.dll.config
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Release\Conexion.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Release\Conexion.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Release\Entidades.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Release\EntityFramework.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Release\EntityFramework.SqlServer.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Release\Entidades.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Release\EntityFramework.xml
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\bin\Release\EntityFramework.SqlServer.xml
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Release\Conexion.csprojResolveAssemblyReference.cache
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Release\Conexion.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Conexion\obj\Release\Conexion.pdb

@@ -14,41 +14,114 @@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-table"></i>
-        Informe de Reporte Nro8
+        Base de Datos por Telefono
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
+            <table class="table table-bordered" id="FirstTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
                 <thead>
                     <tr>
-                        <th>Periodo</th>
-                        <th>F_Recep</th>
                         <th>Fecha</th>
                         <th>DiaSemana</th>
-                        <th>DNI</th>
-                        <th>Celular</th>
-                        <th>Supervisor</th>
-                        <th>Tipo</th>
-                        <th>Origen</th>
-                        <th>Zona</th>
-                        <th>Cant</th>
-                        <th>Tipo2</th>
+                        <th>T1</th>
+                        <th>T2</th>
+                        <th>T3</th>
+                        <th>T4</th>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Cet</th>
+                        <th>NA</th>
+                        <th>Total General</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
+                        <th colspan="2" style="text-align:center">Total General</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="SecondTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
+                <thead>
+                    <tr>
                         <th>Periodo</th>
-                        <th>F_Recep</th>
-                        <th>Fecha</th>
-                        <th>DiaSemana</th>
-                        <th>DNI</th>
-                        <th>Celular</th>
-                        <th>Supervisor</th>
+                        <th>T1</th>
+                        <th>T2</th>
+                        <th>T3</th>
+                        <th>T4</th>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Cet</th>
+                        <th>Total General</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Total General</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="ThirdTable" cellspacing="0" style="text-align: center; font-size: 11px; width: 100%">
+                <thead>
+                    <tr>
+                        <th>Descripcion</th>
                         <th>Tipo</th>
-                        <th>Origen</th>
-                        <th>Zona</th>
-                        <th>Cant</th>
-                        <th>Tipo2</th>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Cet</th>
+                        <th>W1</th>
+                        <th>NA</th>
+                        <th>Total Telef.</th>
+                        <th>T1</th>
+                        <th>T2</th>
+                        <th>T3</th>
+                        <th>T4</th>
+                        <th>T5</th>
+                        <th>Total Telef.</th>
+                        <th>Total General</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th @*colspan="2" style="text-align:center"*@>Total General</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </tfoot>
             </table>
@@ -56,79 +129,8 @@
     </div>
     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
 </div>
-<p class="small text-center text-muted my-5">
-    <em>More table examples coming soon...</em>
-</p>
 <script src="~/Assets/vendor/jquery/jquery.min.js"></script>
 <script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
-
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#myTable').DataTable({
-            "ajax": {
-                "url": "/consultareporte/cargarreporte8",
-                "type": "GET",
-                "datatype": "json"
-            },
-            "columns": [
-                { "data": "Periodo", "autoWidth": true },
-                { "data": "F_Recep", "autoWidth": true },
-                { "data": "Fecha", "autoWidth": true },
-                { "data": "DiaSemana", "autoWidth": true },
-                { "data": "Semana", "autoWidth": true },
-                { "data": "DNI", "autoWidth": true },
-                { "data": "Celular", "autoWidth": true },
-                { "data": "Supervisor", "autoWidth": true },
-                { "data": "Tipo", "autoWidth": true },
-                { "data": "Origen", "autoWidth": true },
-                { "data": "Zona", "autoWidth": true },
-                { "data": "Cant", "autoWidth": true },
-                { "data": "Tipo2", "autoWidth": true }
-            ],
-            "language": {
-                "sProcessing": "Procesando...",
-                "sLengthMenu": "Mostrar _MENU_ registros",
-                "sZeroRecords": "No se encontraron resultados",
-                "sEmptyTable": "Ningún dato disponible en esta tabla",
-                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sInfoPostFix": "",
-                "sSearch": "Buscar:",
-                "sUrl": "",
-                "sInfoThousands": ",",
-                "sLoadingRecords": "Cargando...",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast": "Último",
-                    "sNext": "Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "oAria": {
-                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                }
-            },
-        });
-
-        $('#myTable tfoot th').each(function () {
-            var title = $(this).text();
-            $(this).html('<input type="text" placeholder="Buscar ' + title + '" style="width:150px;"/>');
-        });
-
-        var table = $('#myTable').DataTable();
-
-        table.columns().every(function () {
-            var that = this;
-
-            $('input', this.footer()).on('keyup change', function () {
-                if (that.search() !== this.value) {
-                    that
-                        .search(this.value)
-                        .draw();
-                }
-            });
-        });
-    });
-</script>
+<script src="~/Assets/ScriptReports/report_8A.js"></script>
+<script src="~/Assets/ScriptReports/report_8B.js"></script>
+<script src="~/Assets/ScriptReports/report_8C.js"></script>

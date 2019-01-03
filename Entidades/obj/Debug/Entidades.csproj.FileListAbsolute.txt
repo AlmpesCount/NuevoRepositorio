@@ -71,3 +71,12 @@ C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Debug\Entity
 C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Entidades\obj\Debug\Entidades.dll
 C:\Users\Pc\Desktop\AlmpesPage\PagePrincipal\CapasMVC\Entidades\obj\Debug\Entidades.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Debug\Entidades.dll.config
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Debug\Entidades.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Debug\Entidades.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Debug\EntityFramework.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Debug\EntityFramework.SqlServer.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Debug\EntityFramework.xml
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Debug\EntityFramework.SqlServer.xml
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\obj\Debug\Entidades.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\obj\Debug\Entidades.pdb

@@ -3,3 +3,13 @@ C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Entidades\bin\Release
 C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Entidades\obj\Release\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Entidades\obj\Release\Entidades.dll
 C:\Users\Administrador\Desktop\ADO.net\ADO.net\MVC_ADO.net\Entidades\obj\Release\Entidades.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Release\Entidades.dll.config
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Release\Entidades.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Release\Entidades.pdb
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Release\EntityFramework.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Release\EntityFramework.SqlServer.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Release\EntityFramework.xml
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\bin\Release\EntityFramework.SqlServer.xml
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\obj\Release\Entidades.csprojResolveAssemblyReference.cache
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\obj\Release\Entidades.dll
+D:\AlmpesPage\PagePrincipal\CapasMVC\Entidades\obj\Release\Entidades.pdb

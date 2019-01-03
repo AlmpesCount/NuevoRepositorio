@@ -23,23 +23,37 @@ namespace Entidades
     {
         public string PeriodoOrd { get; set; }
         public string Periodo { get; set; }
-        public string VentaTotal { get; set; }
-        public string VentaAprobada { get; set; }
-        public string VentaActivada { get; set; }
-        public string ActivadaMes { get; set; }
+        public string Mes { get; set; }
+        public string Anio { get; set; }
+        public int VentaTotal { get; set; }
+        public int VentaValida { get; set; }
+        public int VentaAprobada { get; set; }
+        public int VentaActivada { get; set; }
+        public int ActivadaMes { get; set; }
+        public int ActivasMes0 { get; set; }
+        public int ActivadasMes1 { get; set; }
+        public int ActivadasMes2 { get; set; }
+        public int Uso { get; set; }
+        public int TotalGeneral { get; set; }
     }
 
     public class beReporte27
     {
-        public string Periodo { get; set; }
-        public string N_Doc { get; set; }
-        public string Telefono { get; set; }
-        public string F_Recep { get; set; }
-        public string F_Gestion { get; set; }
-        public string TipoCel { get; set; }
-        public string GrupoCel { get; set; }
-        public string Tipo { get; set; }
         public string Descripcion { get; set; }
+        public string Tipo { get; set; }
+        public int Almpes1 { get; set; }
+        public int Almpes2 { get; set; }
+        public int AlmpesCet { get; set; }
+        public int AlmpesW1 { get; set; }
+        public int AlmpesNA { get; set; }
+        public int AlmpesTotal { get; set; }
+        public int Crediscotia1 { get; set; }
+        public int Crediscotia2 { get; set; }
+        public int Crediscotia3 { get; set; }
+        public int Crediscotia4 { get; set; }
+        public int Crediscotia5 { get; set; }
+        public int CrediscotiaTotal { get; set; }
+        public int TotalGeneral { get; set; }
 
     }
 
@@ -53,43 +67,49 @@ namespace Entidades
         public string Dotacion { get; set; }
         public string RecorridoDia { get; set; }
         public string ContactoEfectivoTitular { get; set; }
-        public string ContactoTerceroRelacionado { get; set; }
         public string RecorridoReal { get; set; }
         public string CETReal { get; set; }
-        public string BBDDAsignada { get; set; }
-        public string RecorridoDiaTiempo { get; set; }
+        public string NroVueltas { get; set; }
+        public string VentasTMO { get; set; }
+        public string CETTMO { get; set; }
+        //public string CETReal { get; set; }
+        public string AcepReal { get; set; }
         public string CETTiempo { get; set; }
-        public string CTRTiempo { get; set; }
         public string VentasTiempo { get; set; }
         public string RecorridoUnico { get; set; }
         public string CETUnico { get; set; }
+
+        public string ContactoTerceroRelacionado { get; set; }
+        public string BBDDAsignada { get; set; }
+        public string RecorridoDiaTiempo { get; set; }
+        
+        public string CTRTiempo { get; set; }
+        
+        
+        
         public string Indecopi { get; set; }
         public string RetiroLeads { get; set; }
     }
 
     public class beReporte2
     {
-        public string FRecep { get; set; }
-
         public string Zona { get; set; }
-
-        public string NroVenta { get; set; }
-
-        public string NroVenValida { get; set; }
-
-        public string BBDD { get; set; }
-
-        public string RecorridoReal { get; set; }
-
-        public string CETReal { get; set; }
-
-        public string Recorrido { get; set; }
-
-        public string CET { get; set; }
-
-        public string Indecopi { get; set; }
-
-        public string RetiroLead { get; set; }
+        public string FRecep { get; set; }
+        public int NroVenta { get; set; }
+        public int NroVenValida { get; set; }
+        public int BBDD { get; set; }
+        public int Indecopi { get; set; }
+        public int RetiroLead { get; set; }
+        public int RecorridoReal { get; set; }
+        public int CETReal { get; set; }
+        public double NroVuelta { get; set; }
+        public double PorcCET { get; set; }
+        public double PorcAceptacion { get; set; }
+        public double AvancePorc { get; set; }
+        public double PorcEfectividad { get; set; }
+        public int Recorrido { get; set; }
+        public int CET { get; set; }
+        public double CETVueltas { get; set; }
     }
 
     public class beReporte5
@@ -133,27 +153,38 @@ namespace Entidades
     public class beReporte8
     {
         public string Periodo { get; set; }
-        public string F_Recep { get; set; }
         public string Fecha { get; set; }
         public string DiaSemana { get; set; }
-        public string Semana { get; set; }
-        public string DNI { get; set; }
-        public string Celular { get; set; }
-        public string Supervisor { get; set; }
-        public string Tipo { get; set; }
-        public string Origen { get; set; }
-        public string Zona { get; set; }
-        public string Cant { get; set; }
-        public string Tipo2 { get; set; }
+        public int Crediscotia1 { get; set; }
+        public int Crediscotia2 { get; set; }
+        public int Crediscotia3 { get; set; }
+        public int Crediscotia4 { get; set; }
+        public int Almpes1 { get; set; }
+        public int Almpes2 { get; set; }
+        public int AlmpesCET { get; set; }
+        public int AlmpesNA { get; set; }
+        public int TotalGeneral { get; set; }
+
     }
 
     public class beReporte9
     {
         public string Periodo { get; set; }
-        public string Resultado { get; set; }
-        public int Cuenta { get; set; }
-        public int Anio { get; set; }
-        public int Mes { get; set; }
+        public string Anio { get; set; }
+        public int Column0 { get; set; }
+        public int Column1 { get; set; }
+        public int Column2 { get; set; }
+        public int Column3 { get; set; }
+        public int Column4 { get; set; }
+        public int Column5 { get; set; }
+        public int Column6 { get; set; }
+        public int Column7 { get; set; }
+        public int Column8 { get; set; }
+        public int Column9 { get; set; }
+        public int Column11 { get; set; }
+        public int Column12 { get; set; }
+        public int Column13 { get; set; }
+ 
     }
 
     public class beReporte11 {
@@ -289,16 +320,22 @@ namespace Entidades
     {
         public string Periodo { get; set; }
         public string F_Recep { get; set; }
-        public string NroVenta { get; set; }
-        public string NroVenValida { get; set; }
-        public string LlamadasTotal { get; set; }
-        public string BBDDAcumulado { get; set; }
-        public string LlamadasUnico { get; set; }
-        public string CETUnico { get; set; }
-        public string RetiroLeads { get; set; }
-        public string CETTiempo { get; set; }
-        public string VentasTiempo { get; set; }
-    
+        public int NroVenta { get; set; }
+        public int NroVenValida { get; set; }
+        public int LlamadasTotal { get; set; }
+        public double NroVueltas { get; set; }
+        public double OKAlmpes { get; set; }
+        public int LlamadasUnico { get; set; }
+        public int CETUnico { get; set; }
+        public int BBDDAcumulado { get; set; }
+        public int RetiroLeads { get; set; }
+        public int BBDDTotal { get; set; }
+        public double AvanceBBDD { get; set; }
+        public double PorcBBDD { get; set; }
+        public double AvanceCET { get; set; }
+        public double AceptacionPorc { get; set; }
+        public int VentasTiempo { get; set; }
+        public double VentasTMO { get; set; }
     }
 
     public class beReporte28

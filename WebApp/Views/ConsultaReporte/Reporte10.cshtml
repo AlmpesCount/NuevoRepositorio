@@ -30,7 +30,7 @@
                     </tr>
                 </tbody>
             </table>*@
-            <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 15px; width: 100%">
+            <table class="table table-bordered" id="myTable" cellspacing="0" style="text-align: center; font-size: 13px; width: 100%">
                 <thead>
                     <tr>
                         <th>PeriodoOrd</th>
@@ -39,116 +39,52 @@
                         <th>3.Venta Aprobada</th>
                         <th>4.Venta Activada</th>
                         <th>5.Activadas del Mes</th>
+                        <th>Total General</th>
                     </tr>
                 </thead>
-                <tfoot>
-                    <tr>
-                        <th>PeriodoOrd</th>
-                        <th>Periodo</th>
-                        <th>1.Venta Total</th>
-                        <th>3.Venta Aprobada</th>
-                        <th>4.Venta Activada</th>
-                        <th>5.Activadas del Mes</th>
-                    </tr>
-                </tfoot>
             </table>
             <input type="button" id="btnMostrar" value="Mostrar" onclick=" location.href = '/Charts/ChartsView' " />
         </div>
+        <br /><br /><br />
+        <div class="table-responsive">
+            <table class="table table-bordered" id="SecondTable" cellspacing="0" style="text-align: center; font-size: 12px; width: 100%">
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Año</th>
+                        <th>1.Venta Total</th>
+                        <th>2.Venta Validada</th>
+                        <th>3.Venta Aprobada</th>
+                        <th>4.Venta Activada</th>
+                        <th>5.Activas Mes</th>
+                        <th>6.Activas Mes0</th>
+                        <th>7.Activas Mes1</th>
+                        <th>8.Activas Mes2</th>
+                        <th>9.Uso</th>
+                    </tr>                    
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th colspan="2" style="text-align:center">Total General</th>
+                        @*Estos pie de pagina vacio se llenaran con el JavaScript al inferior de la pagina*@
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
-    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
 </div>
-<p class="small text-center text-muted my-5">
-    <em>More table examples coming soon...</em>
-</p>
 <script src="~/Assets/vendor/jquery/jquery.min.js"></script>
 <script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
-
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#myTable').DataTable({
-            "ajax": {
-                "url": "/consultareporte/cargarreporte10",
-                "type": "GET",
-                "datatype": "json"
-            },
-            "columns": [
-                { "data": "PeriodoOrd", "autoWidth": true },
-                { "data": "Periodo", "autoWidth": true },
-                { "data": "VentaTotal", "autoWidth": true },
-                { "data": "VentaAprobada", "autoWidth": true },
-                { "data": "VentaActivada", "autoWidth": true },
-                { "data": "ActivadaMes", "autoWidth": true}
-            ],
-            "language": {
-                "sProcessing": "Procesando...",
-                "sLengthMenu": "Mostrar _MENU_ registros",
-                "sZeroRecords": "No se encontraron resultados",
-                "sEmptyTable": "Ningún dato disponible en esta tabla",
-                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sInfoPostFix": "",
-                "sSearch": "Buscar:",
-                "sUrl": "",
-                "sInfoThousands": ",",
-                "sLoadingRecords": "Cargando...",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast": "Último",
-                    "sNext": "Siguiente",
-                    "sPrevious": "Anterior"
-                },
-                "oAria": {
-                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                }
-            },
-        });
-
-        $('#myTable tfoot th').each(function () {
-            var title = $(this).text();
-            $(this).html('<input type="text" placeholder="Buscar ' + title + '" style="width:150px;"/>');
-        });
-
-        // DataTable
-        var table = $('#myTable').DataTable();
-
-        // Apply the search
-        table.columns().every(function () {
-            var that = this;
-
-            $('input', this.footer()).on('keyup change', function () {
-                if (that.search() !== this.value) {
-                    that
-                        .search(this.value)
-                        .draw();
-                }
-            });
-        });
-//        $.fn.dataTable.ext.search.push(
-//    function (settings, data, dataIndex) {
-//        var min = parseInt($('#min').val(), 10);
-//        var max = parseInt($('#max').val(), 10);
-//        var age = parseFloat(data[5]) || 0; // use data for the age column
-
-//        if ((isNaN(min) && isNaN(max)) ||
-//             (isNaN(min) && age <= max) ||
-//             (min <= age && isNaN(max)) ||
-//             (min <= age && age <= max)) {
-//            return true;
-//        }
-//        return false;
-//    }
-//);
-
-//        $(document).ready(function () {
-//            var table = $('#myTable').DataTable();
-
-//            // Event listener to the two range filtering inputs to redraw on input
-//            $('#min, #max').keyup(function () {
-//                table.draw();
-//            });
-//        });
-    });
-</script>
+@*Este script sirve para la tabla myTable. Crea la tabla.*@
+<script src="~/Assets/ScriptReports/report_10A.js"></script>
+@*Este script sirve para la tabla SecondTable. Crear la tabla y suma de sus columnas*@
+<script src="~/Assets/ScriptReports/reporte10B.js"></script>
