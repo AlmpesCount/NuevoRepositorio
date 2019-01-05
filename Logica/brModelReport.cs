@@ -31,14 +31,26 @@ namespace Logica
 
         public List<beReporte9> ModelDBCET(beConsultaReportePrincipal Data)
         {
-            var List4 = dlReport.ModelDBCET(Data);
-            return List4;
+            var ListCET = dlReport.ModelDBCET(Data);
+            return ListCET;
+        }
+
+        public List<beReporte1> First_ModelDBDay(beConsultaReportePrincipal Data)
+        {
+            var DayFirst = dlReport.First_ModelDBDay(Data);
+            return DayFirst;
         }
 
         public List<beReporte2> Second_ModelDBDay(beConsultaReportePrincipal Data)
         {
-            var List5 = dlReport.Second_ModelDBDay(Data);
-            return List5;
+            var DaySecond = dlReport.Second_ModelDBDay(Data);
+            return DaySecond;
+        }
+
+        public List<beReporte25> Third_ModelDBDay(beConsultaReportePrincipal Data)
+        {
+            var DayThird = dlReport.Third_ModelDBDay(Data);
+            return DayThird;
         }
     }
 }

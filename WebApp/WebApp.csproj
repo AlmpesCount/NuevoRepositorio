@@ -262,8 +262,11 @@
     <Content Include="Assets\js\Tables\sb-admin.js" />
     <Content Include="Assets\js\Tables\sb-admin.min.js" />
     <Content Include="Assets\mail\contact_me.php" />
+    <Content Include="Assets\ScriptReports\report_1.js" />
     <Content Include="Assets\ScriptReports\report_10A.js" />
     <Content Include="Assets\ScriptReports\reporte10B.js" />
+    <Content Include="Assets\ScriptReports\report_11A.js" />
+    <Content Include="Assets\ScriptReports\report_11B.js" />
     <Content Include="Assets\ScriptReports\report_2.js" />
     <Content Include="Assets\ScriptReports\report_25.js" />
     <Content Include="Assets\ScriptReports\report_8A.js" />

@@ -14,13 +14,28 @@ namespace WebApp.Controllers
     {
         brConsultaReporte consulta = new brConsultaReporte();
         brModelReport model = new brModelReport();
+        brModelSummary summary = new brModelSummary();
 
         static List<Object> lstReporte = new List<Object>();
+
+        #region Listas Reporte Base de Datos
+
         static List<beReporte8> FirstPhone = new List<beReporte8>();
         static List<beReporte8> SecondPhone = new List<beReporte8>();
         static List<beReporte27> ThirdPhone = new List<beReporte27>();
         static List<beReporte9> FirstCET = new List<beReporte9>();
+        static List<beReporte1> FirstDay = new List<beReporte1>();
         static List<beReporte2> SecondDay = new List<beReporte2>();
+        static List<beReporte25> ThirdDay = new List<beReporte25>();
+
+        #endregion
+
+        #region Listas Reporte Resumen
+
+        static List<beReporte11> FirstSummaryMonth = new List<beReporte11>();
+        static List<beReporte11> SecondSummaryMonth = new List<beReporte11>();
+
+        #endregion
 
         public ActionResult ConsultaReportePrincipal()
         {
@@ -30,25 +45,20 @@ namespace WebApp.Controllers
         [HttpPost]
         public ActionResult MostrarTablaConsulta(beConsultaReportePrincipal Reporte)
         {
+            #region Consulta Reporte Base de Datos
+
+            //Aqui inician Consulta Reporte Base de Datos
             if (Reporte.TablaID == 1)
             {
+                //Esta lista sirve para llenar Vista Reporte1, y los
+                //Reportes 2 y 25 contenidos en el.
+                FirstDay = model.First_ModelDBDay(Reporte);
+                SecondDay = model.Second_ModelDBDay(Reporte);
+                ThirdDay = model.Third_ModelDBDay(Reporte);
+
                 return RedirectToAction("Reporte1", "ConsultaReporte");
             }
-            if (Reporte.TablaID == 2)
-            {
-                //Esta lista sirve para llenar Vista Reporte2
-                SecondDay = model.Second_ModelDBDay(Reporte);
 
-                return RedirectToAction("Reporte2", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 5)
-            {
-                return RedirectToAction("Reporte5", "ConsultaReporte");
-            }
-            if (Reporte.TablaID == 7)
-            {
-                return RedirectToAction("Reporte7", "ConsultaReporte");
-            }
             if (Reporte.TablaID == 8)
             {
                 //Este llenado de listas sirve para las distintas tablas del Reporte8
@@ -58,6 +68,7 @@ namespace WebApp.Controllers
 
                 return RedirectToAction("Reporte8", "ConsultaReporte");
             }
+
             if (Reporte.TablaID == 9)
             {
                 //Esta lista sirve para llenar Vista Reporte9
@@ -65,15 +76,38 @@ namespace WebApp.Controllers
 
                 return RedirectToAction("Reporte9", "ConsultaReporte");
             }
+
+            //Aqui terminan Consulta Reporte Base de Datos
+            #endregion
+
+            #region Consulta Reporte Resumen
+
+            //Aqui inician Consulta Reporte Resumen
             if (Reporte.TablaID == 10)
             {
                 lstReporte = consulta.TotalTabla(Reporte);
 
                 return RedirectToAction("Reporte10", "ConsultaReporte");
-            }  
+            }
+
             if (Reporte.TablaID == 11)
             {
+                FirstSummaryMonth = summary.First_SummaryMonth(Reporte);
+                SecondSummaryMonth= summary.Second_SummaryMonth(Reporte);
+
                 return RedirectToAction("Reporte11", "ConsultaReporte");
+            }
+
+            //Aqui terminan Consulta Reporte Resumen
+            #endregion
+
+            if (Reporte.TablaID == 5)
+            {
+                return RedirectToAction("Reporte5", "ConsultaReporte");
+            }
+            if (Reporte.TablaID == 7)
+            {
+                return RedirectToAction("Reporte7", "ConsultaReporte");
             }
             if (Reporte.TablaID == 12)
             {
@@ -107,12 +141,6 @@ namespace WebApp.Controllers
             {
                 return RedirectToAction("Reporte22", "ConsultaReporte");
             }
-            if (Reporte.TablaID == 25)
-            {
-                lstReporte = consulta.TotalTabla(Reporte);
-
-                return RedirectToAction("Reporte25", "ConsultaReporte");
-            }
             if (Reporte.TablaID == 28)
             {
                 return RedirectToAction("Reporte28", "ConsultaReporte");
@@ -123,6 +151,10 @@ namespace WebApp.Controllers
             }
             return View(Reporte);
         }
+
+        #region Vistas Base de Datos
+
+        //Aqui se Inician las Vistas Base de Datos
         public ActionResult Reporte1()
         {
             return View();
@@ -130,8 +162,9 @@ namespace WebApp.Controllers
 
         public ActionResult CargarReporte1()
         {
-            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+            return Json(new { data = FirstDay }, JsonRequestBehavior.AllowGet);
         }
+
         public ActionResult Reporte2()
         {
             return View();
@@ -141,24 +174,7 @@ namespace WebApp.Controllers
         {
             return Json(new { data = SecondDay }, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult Reporte5()
-        {
-            return View();
-        }
 
-        public ActionResult CargarReporte5()
-        {
-            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
-        }
-        public ActionResult Reporte7()
-        {
-            return View();
-        }
-
-        public ActionResult CargarReporte7()
-        {
-            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
-        }
         public ActionResult Reporte8()
         {
             return View();
@@ -189,6 +205,22 @@ namespace WebApp.Controllers
             return Json(new { data = FirstCET }, JsonRequestBehavior.AllowGet);
         }
 
+        public ActionResult Reporte25()
+        {
+            return View();
+        }
+
+        public ActionResult CargarReporte25()
+        {
+            return Json(new { data = ThirdDay }, JsonRequestBehavior.AllowGet);
+        }
+
+        //Aqui se Terminan las Vistas Base de Datos
+        #endregion
+
+        #region Vistas Resumen
+
+        //Aqui se Inician las Vistas Resumen
         public ActionResult Reporte10()
         {
             return View();
@@ -203,7 +235,35 @@ namespace WebApp.Controllers
         {
             return View();
         }
-        public ActionResult CargarReporte11()
+
+        public ActionResult FirstMonth()
+        {
+            return Json(new { data = FirstSummaryMonth }, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult SecondMonth()
+        {
+            return Json(new { data = SecondSummaryMonth }, JsonRequestBehavior.AllowGet);
+        }
+
+        //Aqui terminan Vistas Resumen
+        #endregion
+
+        public ActionResult Reporte5()
+        {
+            return View();
+        }
+
+        public ActionResult CargarReporte5()
+        {
+            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Reporte7()
+        {
+            return View();
+        }
+
+        public ActionResult CargarReporte7()
         {
             return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
         }
@@ -268,14 +328,6 @@ namespace WebApp.Controllers
             return View();
         }
         public ActionResult CargarReporte22()
-        {
-            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
-        }
-        public ActionResult Reporte25()
-        {
-            return View();
-        }
-        public ActionResult CargarReporte25()
         {
             return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
         }

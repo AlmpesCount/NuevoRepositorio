@@ -62,33 +62,33 @@ namespace Entidades
         public string Semana { get; set; }
         public string DiaSemana { get; set; }
         public string Fecha { get; set; }
-        public string NroVenta { get; set;}
-        public string NroVeValida { get; set; }
-        public string Dotacion { get; set; }
-        public string RecorridoDia { get; set; }
-        public string ContactoEfectivoTitular { get; set; }
-        public string RecorridoReal { get; set; }
-        public string CETReal { get; set; }
-        public string NroVueltas { get; set; }
-        public string VentasTMO { get; set; }
-        public string CETTMO { get; set; }
-        //public string CETReal { get; set; }
-        public string AcepReal { get; set; }
-        public string CETTiempo { get; set; }
-        public string VentasTiempo { get; set; }
-        public string RecorridoUnico { get; set; }
-        public string CETUnico { get; set; }
-
-        public string ContactoTerceroRelacionado { get; set; }
-        public string BBDDAsignada { get; set; }
-        public string RecorridoDiaTiempo { get; set; }
-        
-        public string CTRTiempo { get; set; }
-        
-        
-        
-        public string Indecopi { get; set; }
-        public string RetiroLeads { get; set; }
+        public int NroVenta { get; set;}
+        public int NroVeValida { get; set; }
+        public int Dotacion { get; set; }
+        public int RecorridoDia { get; set; }
+        public int ContactoEfectivoTitular { get; set; }
+        public int RecorridoReal { get; set; }
+        public int CETReal { get; set; }
+        public double NroVueltas { get; set; }
+        public double VentasTMO { get; set; }
+        public double CETTMO { get; set; }
+        public double PorcCETReal { get; set; }
+        public double PorcAcepReal { get; set; }
+        public double AcepReal { get; set; }
+        public double CETTiempo { get; set; }
+        public double VentasTiempo { get; set; }
+        public int RecorridoUnico { get; set; }
+        public int CETUnico { get; set; }
+        public double RecorridoAcumulado { get; set; }
+        public double CETAcumulado { get; set; }
+        public int BBDDAsignada { get; set; }
+        public int Indecopi { get; set; }
+        public int RetiroLeads { get; set; }
+        public double BBDDAcumulado { get; set; }
+        public double AvancePorcBBDD { get; set; }
+        public double RecorridoDiaTiempo { get; set; }
+        public double CTRTiempo { get; set; }
+        public int ContactoTerceroRelacionado { get; set; } 
     }
 
     public class beReporte2
@@ -193,7 +193,12 @@ namespace Entidades
         public int VentaTotal  {get; set;}
         public int VentaValida { get; set; }
         public int VentaAprobada { get; set; }
-        public int Dia { get; set; }
+        public string Dia { get; set; }
+        public double PassingValido { get; set; }
+        public double PassingAprobado { get; set; }
+        public double Venta { get; set; }
+        public double Validado { get; set; }
+        public double Aprobado { get; set; }
     }
 
     public class beReporte12 {
@@ -323,6 +328,7 @@ namespace Entidades
         public int NroVenta { get; set; }
         public int NroVenValida { get; set; }
         public int LlamadasTotal { get; set; }
+        public int CETTiempo { get; set; }
         public double NroVueltas { get; set; }
         public double OKAlmpes { get; set; }
         public int LlamadasUnico { get; set; }

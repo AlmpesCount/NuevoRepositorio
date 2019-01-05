@@ -169,6 +169,93 @@ namespace Conexion
             return CETList;
         }
 
+        public List<beReporte1> First_ModelDBDay(beConsultaReportePrincipal Data)
+        {
+            List<beReporte1> FirtDay = new List<beReporte1>();
+
+            using (SqlConnection con = Conexion.ConexionSql)
+            {
+                SqlCommand cmd = new SqlCommand("WEB_SITE_MODEL_REPORT", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                con.Open();
+                cmd.Parameters.AddWithValue("@id", 5);
+                cmd.Parameters.AddWithValue("@Fecha1", Data.FechaInicio);
+                cmd.Parameters.AddWithValue("@Fecha2", Data.FechaFin);
+                SqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    beReporte1 conrep = new beReporte1();
+                    conrep.Zona = rdr["Zona"].ToString();
+                    conrep.Semana = rdr["Semana"].ToString();
+                    conrep.DiaSemana = rdr["DiaSemana"].ToString();
+                    conrep.Fecha = rdr["Fecha"].ToString();
+                    conrep.NroVenta = Convert.ToInt32(rdr["NVenta"].ToString());
+                    conrep.NroVeValida = Convert.ToInt32(rdr["NVenValida"].ToString());
+                    conrep.Dotacion = Convert.ToInt32(rdr["Dotacion"].ToString());
+                    conrep.RecorridoDia = Convert.ToInt32(rdr["RecorridoporDia"].ToString());
+                    conrep.ContactoEfectivoTitular = Convert.ToInt32(rdr["ContEfectTitular"].ToString());
+                    conrep.RecorridoReal = Convert.ToInt32(rdr["RecorridoReal"].ToString());
+                    conrep.CETReal = Convert.ToInt32(rdr["CETReal"].ToString());
+                    conrep.CETTiempo = Convert.ToDouble(rdr["CETTiempo"].ToString());
+                    conrep.VentasTiempo = Convert.ToDouble(rdr["VentasTiempo"].ToString());
+                    conrep.RecorridoUnico = Convert.ToInt32(rdr["RecorridoUnico"].ToString());
+                    conrep.CETUnico = Convert.ToInt32(rdr["CETUnico"].ToString());
+                    conrep.BBDDAsignada = Convert.ToInt32(rdr["BBDDAsignada"].ToString());
+                    conrep.Indecopi = Convert.ToInt32(rdr["Indecopi"].ToString());
+                    conrep.RetiroLeads = Convert.ToInt32(rdr["RetiroLeads"].ToString());
+                    conrep.RecorridoDiaTiempo = Convert.ToDouble(rdr["RecorridoDiaTiempo"].ToString());
+                    conrep.CTRTiempo = Convert.ToDouble(rdr["CTRTiempo"].ToString());
+                    conrep.ContactoTerceroRelacionado = Convert.ToInt32(rdr["ContTercRelacionado"].ToString());
+
+                    //FALTAN COLOCAR COLUMNAS TOTALES
+                    //if (conrep.Fecha.Contains("01"))
+                    //{
+                    //    conrep.RecorridoAcumulado = conrep.RecorridoUnico;
+                    //}
+                    //else
+                    //{
+                    //    conrep.RecorridoAcumulado = conrep.RecorridoUnico + conrep.RecorridoAcumulado;
+                    //}
+
+                    if (conrep.RecorridoReal != 0)
+                    {
+                        conrep.NroVueltas = Math.Round(((double)conrep.RecorridoDia / (double)conrep.RecorridoReal), 1);
+                        conrep.PorcCETReal = Math.Round((((double)conrep.CETReal / (double)conrep.RecorridoReal) * 100), 1);
+                    }
+                    else
+                    {
+                        conrep.NroVueltas = 0;
+                    }
+                    if (conrep.NroVenta != 0)
+                    {
+
+                        conrep.VentasTMO = Math.Round(((double)conrep.VentasTiempo / (double)conrep.NroVenta), 1);
+                    }
+                    if (conrep.ContactoEfectivoTitular != 0)
+                    {
+                        conrep.CETTMO = Math.Round(((double)conrep.CETTiempo / (double)conrep.ContactoEfectivoTitular), 1);
+                    }
+                    else
+                    {
+                        conrep.CETTMO = 0;
+                    }
+                    if (conrep.CETReal != 0)
+                    {
+                        conrep.PorcAcepReal = Math.Round((((double)conrep.NroVenta / (double)conrep.CETReal) * 100), 1);
+                    }
+                    else
+                    {
+                        conrep.PorcAcepReal = 0;
+                    }
+
+                    FirtDay.Add(conrep);
+                }
+                con.Close();
+            }
+            return FirtDay;
+        }
+
         public List<beReporte2> Second_ModelDBDay(beConsultaReportePrincipal Data)
         {
             List<beReporte2> SecondDay = new List<beReporte2>();
@@ -206,7 +293,8 @@ namespace Conexion
                     }
                     else
                     {
-                        conrep.NroVuelta = 0; conrep.PorcCET = 0;
+                        conrep.NroVuelta = 0;
+                        conrep.PorcCET = 0;
                     }
                     if (conrep.CETReal != 0)
                     {
@@ -234,6 +322,93 @@ namespace Conexion
                 con.Close();
             }
             return SecondDay;
+        }
+
+        public List<beReporte25> Third_ModelDBDay(beConsultaReportePrincipal Data)
+        {
+            List<beReporte25> ThirdDay = new List<beReporte25>();
+
+            using (SqlConnection con = Conexion.ConexionSql)
+            {
+                SqlCommand cmd = new SqlCommand("WEB_SITE_Data_General", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                con.Open();
+                cmd.Parameters.AddWithValue("@id", 25);
+                cmd.Parameters.AddWithValue("@Fecha_1", Data.FechaInicio);
+                cmd.Parameters.AddWithValue("@Fecha_2", Data.FechaFin);
+                SqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    beReporte25 conrep = new beReporte25();
+
+                    conrep.Periodo = rdr["Periodo"].ToString();
+                    conrep.F_Recep = rdr["F_Recep"].ToString();
+                    conrep.NroVenta = Convert.ToInt32(rdr["N° Venta"].ToString());
+                    conrep.NroVenValida = Convert.ToInt32(rdr["N° Ven. Valida"].ToString());
+                    conrep.LlamadasTotal = Convert.ToInt32(rdr["Llamadas Total"].ToString());
+                    conrep.LlamadasUnico = Convert.ToInt32(rdr["Llamadas Unico"].ToString());
+                    conrep.CETUnico = Convert.ToInt32(rdr["CET Unico"].ToString());
+                    conrep.BBDDAcumulado = Convert.ToInt32(rdr["BBDD Acumulado"].ToString());
+                    conrep.RetiroLeads = Convert.ToInt32(rdr["Retiro de Leads"].ToString());
+                    conrep.CETTiempo = Convert.ToInt32(rdr["CET Tiempo"].ToString());
+                    conrep.VentasTiempo = Convert.ToInt32(rdr["Ventas Tiempo"].ToString());
+
+                    conrep.BBDDTotal = conrep.BBDDAcumulado - conrep.RetiroLeads;
+
+                    if (conrep.LlamadasUnico != 0)
+                    {
+                        conrep.NroVueltas = Math.Round(((double)conrep.LlamadasTotal / (double)conrep.LlamadasUnico), 1);
+                        conrep.AvanceCET = Math.Round(((double)conrep.CETUnico / (double)conrep.LlamadasUnico * 100), 0);
+                    }
+                    else
+                    {
+                        conrep.NroVueltas = 0;
+                        conrep.AvanceCET = 0;
+                    }
+
+                    if (conrep.NroVenta != 0)
+                    {
+                        conrep.OKAlmpes = Math.Round(((double)conrep.NroVenValida / (double)conrep.NroVenta * 100), 0);
+                        conrep.VentasTMO = Math.Round(((double)conrep.VentasTiempo / (double)conrep.NroVenta), 2);
+                    }
+                    else
+                    {
+                        conrep.OKAlmpes = 0;
+                        conrep.VentasTMO = 0;
+                    }
+
+                    if (conrep.BBDDAcumulado != 0)
+                    {
+                        conrep.AvanceBBDD = Math.Round(((double)conrep.LlamadasUnico / (double)conrep.BBDDAcumulado * 100), 0);
+                    }
+                    else
+                    {
+                        conrep.AvanceBBDD = 0;
+                    }
+
+                    if (conrep.BBDDTotal != 0)
+                    {
+                        conrep.PorcBBDD = Math.Round(((double)conrep.LlamadasUnico / (double)conrep.BBDDTotal * 100), 0);
+                    }
+                    else
+                    {
+                        conrep.PorcBBDD = 0;
+                    }
+                    if (conrep.CETUnico != 0)
+                    {
+                        conrep.AceptacionPorc = Math.Round(((double)conrep.NroVenta / (double)conrep.CETUnico * 100), 0);
+                    }
+                    else
+                    {
+                        conrep.AceptacionPorc = 0;
+                    }
+
+                    ThirdDay.Add(conrep);
+                }
+                con.Close();
+            }
+            return ThirdDay;
         }
     }
 }

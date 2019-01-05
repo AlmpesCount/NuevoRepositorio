@@ -27,34 +27,6 @@ namespace Conexion
 
                 while (rdr.Read())
                 {
-                    if (Data.TablaID == 1)
-                    {
-                        beReporte1 conrep = new beReporte1();
-                        conrep.Zona = rdr["Zona"].ToString();
-                        conrep.Semana = rdr["Semana"].ToString();
-                        conrep.DiaSemana = rdr["DiaSemana"].ToString();
-                        conrep.Fecha = rdr["Fecha"].ToString();
-                        conrep.NroVenta = rdr["N° Venta"].ToString();
-                        conrep.NroVeValida = rdr["N° Ven. Valida"].ToString();
-                        conrep.Dotacion = rdr["Dotacion"].ToString();
-                        conrep.RecorridoDia = rdr["Recorrido por Dia"].ToString();
-                        conrep.ContactoEfectivoTitular = rdr["Contacto Efectivo con Titular"].ToString();
-                        conrep.ContactoTerceroRelacionado = rdr["Contacto con Tercero Relacionado"].ToString();
-                        conrep.RecorridoReal = rdr["Recorrido Real"].ToString();
-                        //conrep.CETReal = rdr["CET Real"].ToString();
-                        conrep.BBDDAsignada = rdr["BBDD Asignada"].ToString();
-                        conrep.RecorridoDiaTiempo = rdr["Recorrido por Dia Tiempo"].ToString();
-                        conrep.CETTiempo = rdr["CET Tiempo"].ToString();
-                        conrep.CTRTiempo = rdr["CTR Tiempo"].ToString();
-                        conrep.VentasTiempo = rdr["Ventas Tiempo"].ToString();
-                        conrep.RecorridoUnico = rdr["Recorrido Unico"].ToString();
-                        conrep.CETUnico = rdr["CET Unico"].ToString();
-                        conrep.Indecopi = rdr["Indecopi"].ToString();
-                        conrep.RetiroLeads = rdr["Retiro Leads"].ToString();
-
-                        lstReporte.Add(conrep);
-                    }
-
                     if (Data.TablaID == 2)
                     {
                         beReporte2 conrep = new beReporte2();
@@ -124,38 +96,6 @@ namespace Conexion
                         lstReporte.Add(conrep);
                     }
 
-                    //if (Data.TablaID == 8)
-                    //{
-                    //    beReporte8 conrep = new beReporte8();
-                    //    conrep.Periodo = rdr["Periodo"].ToString();
-                    //    conrep.F_Recep = rdr["F_Recep"].ToString();
-                    //    conrep.Fecha = rdr["Fecha"].ToString();
-                    //    conrep.DiaSemana = rdr["DiaSemana"].ToString();
-                    //    conrep.Semana = rdr["Semana"].ToString();
-                    //    conrep.DNI = rdr["Dni"].ToString();
-                    //    conrep.Celular = rdr["Celular"].ToString();
-                    //    conrep.Supervisor = rdr["Supervisor"].ToString();
-                    //    conrep.Tipo = rdr["Tipo"].ToString();
-                    //    conrep.Origen = rdr["Origen"].ToString();
-                    //    conrep.Zona = rdr["Zona"].ToString();
-                    //    conrep.Cant = rdr["Cant"].ToString();
-                    //    conrep.Tipo2 = rdr["Tipo2"].ToString();
-
-                    //    lstReporte.Add(conrep);
-                    //}
-
-                    //if (Data.TablaID == 9)
-                    //{
-                    //    beReporte9 conrep = new beReporte9();
-                    //    conrep.Periodo = rdr["Periodo"].ToString();
-                    //    conrep.Resultado = rdr["Resultado"].ToString();
-                    //    conrep.Cuenta = Convert.ToInt32(rdr["Cuenta"].ToString());
-                    //    conrep.Anio = Convert.ToInt32(rdr["año"].ToString());
-                    //    conrep.Mes = Convert.ToInt32(rdr["mes"].ToString());
-
-                    //    lstReporte.Add(conrep);
-                    //}
-
                     if(Data.TablaID == 10)
                     {
                         beConsultaReporte conrep = new beConsultaReporte();
@@ -178,18 +118,6 @@ namespace Conexion
                         lstReporte.Add(conrep);
                     }
 
-                    if (Data.TablaID == 11)
-                    {
-                        beReporte11 conrep = new beReporte11();
-                        conrep.Promotor = rdr["Promotor"].ToString();
-                        conrep.Supervisor = rdr["Supervisor"].ToString();
-                        conrep.VentaTotal = Convert.ToInt32(rdr["1.Venta Total"].ToString());
-                        conrep.VentaValida = Convert.ToInt32(rdr["2.Venta Valida"].ToString());
-                        conrep.VentaAprobada = Convert.ToInt32(rdr["3.Venta Aprobada"].ToString());
-                        conrep.Dia = Convert.ToInt32(rdr["Dia"].ToString());
-
-                        lstReporte.Add(conrep);
-                    }
                     if (Data.TablaID == 12)
                     {
                         beReporte12 conrep = new beReporte12();
@@ -330,48 +258,7 @@ namespace Conexion
                         lstReporte.Add(conrep);
 
                     }
-                    if (Data.TablaID == 25)
-                    {
-                        beReporte25 conrep = new beReporte25();
-                        conrep.Periodo = rdr["Periodo"].ToString();
-                        conrep.F_Recep = rdr["F_Recep"].ToString();
-                        conrep.NroVenta = Convert.ToInt32(rdr["N° Venta"].ToString());
-                        conrep.NroVenValida = Convert.ToInt32(rdr["N° Ven. Valida"].ToString());
-                        conrep.LlamadasTotal = Convert.ToInt32(rdr["Llamadas Total"].ToString());      
-                        conrep.LlamadasUnico = Convert.ToInt32(rdr["Llamadas Unico"].ToString());
-                        conrep.CETUnico = Convert.ToInt32(rdr["CET Unico"].ToString());
-                        conrep.BBDDAcumulado = Convert.ToInt32(rdr["BBDD Acumulado"].ToString());
-                        conrep.RetiroLeads = Convert.ToInt32(rdr["Retiro de Leads"].ToString()); 
-                        conrep.VentasTiempo = Convert.ToInt32(rdr["Ventas Tiempo"].ToString());
 
-                        if (conrep.LlamadasUnico != 0 /*|| conrep.NroVenta != 0 ||
-                            conrep.BBDDAcumulado != 0 || conrep.BBDDTotal != 0 ||
-                            conrep.LlamadasUnico != 0 || conrep.CETUnico != 0 ||
-                            conrep.NroVenta != 0*/)
-                        {
-                            conrep.NroVueltas = Math.Round(((double)conrep.LlamadasTotal / (double)conrep.LlamadasUnico), 1);
-                            conrep.OKAlmpes = Math.Round(((double)conrep.NroVenValida / (double)conrep.NroVenta * 100), 0);
-                            conrep.BBDDTotal = conrep.BBDDAcumulado - conrep.RetiroLeads;
-                            conrep.AvanceBBDD = Math.Round(((double)conrep.LlamadasUnico / (double)conrep.BBDDAcumulado * 100), 0);
-                            conrep.PorcBBDD = Math.Round(((double)conrep.LlamadasUnico / (double)conrep.BBDDTotal * 100), 0);
-                            conrep.AvanceCET = Math.Round(((double)conrep.CETUnico / (double)conrep.LlamadasUnico * 100), 0);
-                            conrep.AceptacionPorc = Math.Round(((double)conrep.NroVenta / (double)conrep.CETUnico * 100), 0);
-                            conrep.VentasTMO = Math.Round(((double)conrep.VentasTiempo / (double)conrep.NroVenta), 2);
-                        }
-                        else
-                        {
-                            conrep.NroVueltas = 0;
-                            conrep.OKAlmpes = 0;
-                            conrep.BBDDTotal = 0;
-                            conrep.AvanceBBDD = 0;
-                            conrep.PorcBBDD = 0;
-                            conrep.AvanceCET = 0;
-                            conrep.AceptacionPorc = 0;
-                            conrep.VentasTMO = 0;
-                        }
-
-                        lstReporte.Add(conrep);
-                    }
                     if (Data.TablaID == 28)
                     {
                         beReporte28 conrep = new beReporte28();

@@ -1,5 +1,7 @@
 ﻿    $(document).ready(function () {
-        $('#myTable').DataTable({
+        $('#ThirdTable').DataTable({
+            "scrollY": 350,
+            "scrollX": true,
             "ajax": {
                 "url": "/consultareporte/cargarreporte25",
                 "type": "GET",
@@ -11,6 +13,7 @@
                 { "data": "NroVenta", "autoWidth": true },
                 { "data": "NroVenValida", "autoWidth": true },
                 { "data": "LlamadasTotal", "autoWidth": true },
+                { "data": "CETTiempo", "autoWidth": true },
                 { "data": "NroVueltas", "autoWidth": true },
                 { "data": "OKAlmpes", "autoWidth": true },
                 { "data": "LlamadasUnico", "autoWidth": true },
@@ -52,7 +55,7 @@
             initComplete: function () {
                 this.api().column(0).every(function () {
                     var column = this;
-                    var select = $('<select style=" width: 150px;"><option value=""></option></select>')
+                    var select = $('<select style=" width: 150px; text-align: center;"><option value=""></option></select>')
                         .appendTo($(column.footer()).empty())
                         .on('change', function () {
                             var val = $.fn.dataTable.util.escapeRegex(
@@ -81,30 +84,6 @@
                         i : 0;
                 };
 
-                // Total over all pages
-                total = api
-                    .column(2)
-                    .column(3)
-                    .column(4)
-                    .column(5)
-                    .column(6)
-                    .column(7)
-                    .column(8)
-                    .column(9)
-                    .column(10)
-                    .column(11)
-                    .column(12)
-                    .column(13)
-                    .column(14)
-                    .column(15)
-                    .column(16)
-                    .column(17)
-                    .data()
-                    .reduce(function (a, b) {
-                        return intVal(a) + intVal(b);
-                    }, 0);
-
-
                 // Total over this page
                 NVenta = api
                     .column(2, { page: 'current' })
@@ -126,91 +105,50 @@
                     .reduce(function (a, b) {
                         return intVal(a) + intVal(b);
                     }, 0);
-                //NVueltas = api
-                //    .column(5, { page: 'current' })
-                //    .data()
-                //    .reduce(function (a, b) {
-                //        return intVal(a) + intVal(b);
-                //    }, 0);
-
-                //OKAlmpes = api
-                //    .column(6, { page: 'current' })
-                //    .data()
-                //    .reduce(function (a, b) {
-                //        return intVal(a) + intVal(b);
-                //    }, 0);
 
                 LlamadasUnico = api
-                    .column(7, { page: 'current' })
-                    .data()
-                    .reduce(function (a, b) {
-                        return intVal(a) + intVal(b);
-                    }, 0);
-                CETUnico = api
                     .column(8, { page: 'current' })
                     .data()
                     .reduce(function (a, b) {
                         return intVal(a) + intVal(b);
                     }, 0);
-
-                BBDDAcum = api
+                CETUnico = api
                     .column(9, { page: 'current' })
                     .data()
                     .reduce(function (a, b) {
                         return intVal(a) + intVal(b);
                     }, 0);
 
-                RetiroLeads = api
+                BBDDAcum = api
                     .column(10, { page: 'current' })
                     .data()
                     .reduce(function (a, b) {
                         return intVal(a) + intVal(b);
                     }, 0);
 
-                BBDDTotal = api
+                RetiroLeads = api
                     .column(11, { page: 'current' })
                     .data()
                     .reduce(function (a, b) {
                         return intVal(a) + intVal(b);
                     }, 0);
 
-                //AvanceBBDD = api
-                //    .column(12, { page: 'current' })
-                //    .data()
-                //    .reduce(function (a, b) {
-                //        return intVal(a) + intVal(b);
-                //    }, 0);
-
-                //PorcBBDD = api
-                //    .column(13, { page: 'current' })
-                //    .data()
-                //    .reduce(function (a, b) {
-                //        return intVal(a) + intVal(b);
-                //    }, 0);
-
-                //AvanceCET = api
-                //    .column(14, { page: 'current' })
-                //    .data()
-                //    .reduce(function (a, b) {
-                //        return intVal(a) + intVal(b);
-                //    }, 0);
-
-                //AceptacionPorc = api
-                //   .column(15, { page: 'current' })
-                //   .data()
-                //   .reduce(function (a, b) {
-                //       return intVal(a) + intVal(b);
-                //   }, 0);
+                BBDDTotal = api
+                    .column(12, { page: 'current' })
+                    .data()
+                    .reduce(function (a, b) {
+                        return intVal(a) + intVal(b);
+                    }, 0);
 
                 VentaTmp = api
-                   .column(16, { page: 'current' })
+                   .column(17, { page: 'current' })
                    .data()
                    .reduce(function (a, b) {
                        return intVal(a) + intVal(b);
                    }, 0);
 
                 VentasTMO = api
-                   .column(17, { page: 'current' })
+                   .column(18, { page: 'current' })
                    .data()
                    .reduce(function (a, b) {
                        return intVal(a) + intVal(b);
@@ -226,44 +164,44 @@
                 $(api.column(4).footer()).html(
                    LlamadasTot
                 );
-                //$(api.column(5).footer()).html(
-                //   NVueltas
-                //);
-                //$(api.column(6).footer()).html(
-                //   OKAlmpes
-                //);
+                $(api.column(6).footer()).html(
+                   (LlamadasTot / LlamadasUnico).toFixed(1)
+                );
                 $(api.column(7).footer()).html(
-                   LlamadasUnico
+                   ((NVenValida / NVenta) * 100).toFixed(0) + '%'
                 );
                 $(api.column(8).footer()).html(
-                   CETUnico
+                   LlamadasUnico
                 );
                 $(api.column(9).footer()).html(
-                   BBDDAcum
+                   CETUnico
                 );
                 $(api.column(10).footer()).html(
-                   RetiroLeads
+                   BBDDAcum
                 );
                 $(api.column(11).footer()).html(
+                   RetiroLeads
+                );
+                $(api.column(12).footer()).html(
                    BBDDTotal
                 );
-                //$(api.column(12).footer()).html(
-                //   AvanceBBDD
-                //);
-                //$(api.column(13).footer()).html(
-                //   PorcBBDD
-                //);
-                //$(api.column(14).footer()).html(
-                //   AvanceCET
-                //);
-                //$(api.column(15).footer()).html(
-                //   AceptacionPorc
-                //);
+                $(api.column(13).footer()).html(
+                   ((LlamadasUnico / BBDDAcum) * 100).toFixed(0) + '%'
+                );
+                $(api.column(14).footer()).html(
+                   ((LlamadasUnico / BBDDTotal) * 100).toFixed(0) + '%'
+                );
+                $(api.column(15).footer()).html(
+                   ((CETUnico / LlamadasUnico) * 100).toFixed(0) + '%'
+                );
                 $(api.column(16).footer()).html(
-                   VentaTmp
+                   ((NVenta / CETUnico) * 100).toFixed(0) + '%'
                 );
                 $(api.column(17).footer()).html(
-                   VentasTMO
+                   VentaTmp
+                );
+                $(api.column(18).footer()).html(
+                   (VentaTmp / NVenta).toFixed(2)
                 );
             }
         });

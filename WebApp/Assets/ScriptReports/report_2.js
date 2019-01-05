@@ -1,5 +1,7 @@
 ﻿$(document).ready(function () {
-    $('#myTable').DataTable({
+    $('#SecondTable').DataTable({
+        "scrollY": 350,
+        "scrollX": true,
         "ajax": {
             "url": "/consultareporte/CargarReporte2",
             "type": "GET",
@@ -60,26 +62,6 @@
                     i : 0;
             };
 
-            // Total over all pages
-            total = api
-                .column(2)
-                .column(3)
-                .column(4)
-                .column(5)
-                .column(6)
-                .column(7)
-                .column(8)
-                .column(9)
-                .column(10)
-                .column(11)
-                .column(12)
-                .column(13)
-                .data()
-                .reduce(function (a, b) {
-                    return intVal(a) + intVal(b);
-                }, 0);
-
-
             // Total over this page
             NVenta = api
                 .column(2, { page: 'current' })
@@ -128,40 +110,12 @@
                     return intVal(a) + intVal(b);
                 }, 0);
 
-            /*BBDDAcum = api
+            NVueltas = api
                 .column(9, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
-
-            RetiroLeads = api
-                .column(10, { page: 'current' })
-                .data()
-                .reduce(function (a, b) {
-                    return intVal(a) + intVal(b);
-                }, 0);
-
-            BBDDTotal = api
-                .column(11, { page: 'current' })
-                .data()
-                .reduce(function (a, b) {
-                    return intVal(a) + intVal(b);
-                }, 0);
-
-            //AvanceBBDD = api
-            //    .column(12, { page: 'current' })
-            //    .data()
-            //    .reduce(function (a, b) {
-            //        return intVal(a) + intVal(b);
-            //    }, 0);
-
-            //PorcBBDD = api
-            //    .column(13, { page: 'current' })
-            //    .data()
-            //    .reduce(function (a, b) {
-            //        return intVal(a) + intVal(b);
-            //    }, 0);*/
 
             // Update footer
             $(api.column(2).footer()).html(
@@ -185,21 +139,21 @@
             $(api.column(8).footer()).html(
                CETReal
             );
-            //$(api.column(9).footer()).html(
-            //   BBDDAcum
-            //);
-            //$(api.column(10).footer()).html(
-            //   RetiroLeads
-            //);
-            //$(api.column(11).footer()).html(
-            //   BBDDTotal
-            //);
-            //$(api.column(12).footer()).html(
-            //   AvanceBBDD
-            //);
-            //$(api.column(13).footer()).html(
-            //   PorcBBDD
-            //);
+            $(api.column(9).footer()).html(
+               NVueltas.toFixed(0)
+            );
+            $(api.column(10).footer()).html(
+               ((CETReal / RecorridoReal) * 100).toFixed(0) + '%'
+            );
+            $(api.column(11).footer()).html(
+               ((NVenta / CETReal) * 100).toFixed(1) + '%'
+            );
+            $(api.column(12).footer()).html(
+               ((BBDD / (RecorridoReal - Indecopi)) * 100).toFixed(1) + '%'
+            );
+            $(api.column(13).footer()).html(
+               ((NVenta / CETReal) * 100).toFixed(1) + '%'
+            );
         }
     });
 });
