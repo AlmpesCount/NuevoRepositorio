@@ -52,8 +52,8 @@
     <Compile Include="daEquipo.cs" />
     <Compile Include="daHeadPhone.cs" />
     <Compile Include="daLogin.cs" />
-    <Compile Include="daModelReport.cs" />
-    <Compile Include="daModelSummary.cs" />
+    <Compile Include="daModelBasedeDatos.cs" />
+    <Compile Include="daModelResumen.cs" />
     <Compile Include="daUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

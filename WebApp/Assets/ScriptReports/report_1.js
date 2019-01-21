@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     $('#FirstTable').DataTable({
         "ajax": {
-            "url": "/consultareporte/cargarreporte1",
+            "url": "/database/cargarreporte1",
             "type": "GET",
             "datatype": "json"
         },

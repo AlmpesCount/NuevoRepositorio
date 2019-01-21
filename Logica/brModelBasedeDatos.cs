@@ -8,9 +8,9 @@ using Entidades;
 
 namespace Logica
 {
-    public class brModelReport
+    public class brModelBasedeDatos
     {
-        daModelReport dlReport = new daModelReport();
+        daModelBasedeDatos dlReport = new daModelBasedeDatos();
         public List<beReporte8> First_ModelDBPhone(beConsultaReportePrincipal Data)
         {
             var List1 = dlReport.First_ModelDBPhone(Data);

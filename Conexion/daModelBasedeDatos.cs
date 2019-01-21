@@ -9,44 +9,53 @@ using System.Data;
 
 namespace Conexion
 {
-    public class daModelReport
+    public class daModelBasedeDatos
     {
         public List<beReporte8> First_ModelDBPhone(beConsultaReportePrincipal Data)
         {
             List<beReporte8> FirtReport = new List<beReporte8>();
 
-            using (SqlConnection con = Conexion.ConexionSql)
+            try
             {
-                SqlCommand cmd = new SqlCommand("WEB_SITE_MODEL_REPORT", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                con.Open();
-                cmd.Parameters.AddWithValue("@Id", 2);
-                cmd.Parameters.AddWithValue("@Fecha1", Data.FechaInicio);
-                cmd.Parameters.AddWithValue("@Fecha2", Data.FechaFin);
-                SqlDataReader rdr = cmd.ExecuteReader();
-
-                while (rdr.Read())
+                using (SqlConnection con = Conexion.ConexionSql)
                 {
-                    beReporte8 firstConrep = new beReporte8();
-                    firstConrep.Fecha = rdr["Fecha"].ToString();
-                    firstConrep.DiaSemana = rdr["DiaSemana"].ToString();
-                    firstConrep.Crediscotia1 = Convert.ToInt32(rdr["T1"].ToString());
-                    firstConrep.Crediscotia2 = Convert.ToInt32(rdr["T2"].ToString());
-                    firstConrep.Crediscotia3 = Convert.ToInt32(rdr["T3"].ToString());
-                    firstConrep.Crediscotia4 = Convert.ToInt32(rdr["T4"].ToString());
-                    firstConrep.Almpes1 = Convert.ToInt32(rdr["Q1"].ToString());
-                    firstConrep.Almpes2 = Convert.ToInt32(rdr["Q2"].ToString());
-                    firstConrep.AlmpesCET = Convert.ToInt32(rdr["Cet"].ToString());
-                    firstConrep.AlmpesNA = Convert.ToInt32(rdr["NA"].ToString());
-                    firstConrep.TotalGeneral =  firstConrep.Crediscotia1 + firstConrep.Crediscotia2 +
-                                                firstConrep.Crediscotia3 + firstConrep.Crediscotia4 +
-                                                firstConrep.Almpes1 + firstConrep.Almpes2 +
-                                                firstConrep.AlmpesCET + firstConrep.AlmpesNA;
+                    SqlCommand cmd = new SqlCommand("WEB_SITE_MODEL_REPORT", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    con.Open();
+                    cmd.Parameters.AddWithValue("@Id", 2);
+                    cmd.Parameters.AddWithValue("@Fecha1", Data.FechaInicio);
+                    cmd.Parameters.AddWithValue("@Fecha2", Data.FechaFin);
+                    SqlDataReader rdr = cmd.ExecuteReader();
 
-                    FirtReport.Add(firstConrep);
+                    while (rdr.Read())
+                    {
+                        beReporte8 firstConrep = new beReporte8();
+                        firstConrep.Fecha = rdr["Fecha"].ToString();
+                        firstConrep.DiaSemana = rdr["DiaSemana"].ToString();
+                        firstConrep.Crediscotia1 = Convert.ToInt32(rdr["T1"].ToString());
+                        firstConrep.Crediscotia2 = Convert.ToInt32(rdr["T2"].ToString());
+                        firstConrep.Crediscotia3 = Convert.ToInt32(rdr["T3"].ToString());
+                        firstConrep.Crediscotia4 = Convert.ToInt32(rdr["T4"].ToString());
+                        firstConrep.Almpes1 = Convert.ToInt32(rdr["Q1"].ToString());
+                        firstConrep.Almpes2 = Convert.ToInt32(rdr["Q2"].ToString());
+                        firstConrep.AlmpesCET = Convert.ToInt32(rdr["Cet"].ToString());
+                        firstConrep.AlmpesNA = Convert.ToInt32(rdr["NA"].ToString());
+                        firstConrep.TotalGeneral = firstConrep.Crediscotia1 + firstConrep.Crediscotia2 +
+                                                    firstConrep.Crediscotia3 + firstConrep.Crediscotia4 +
+                                                    firstConrep.Almpes1 + firstConrep.Almpes2 +
+                                                    firstConrep.AlmpesCET + firstConrep.AlmpesNA;
+
+                        FirtReport.Add(firstConrep);
+                    }
+                    con.Close();
                 }
-                con.Close();
+
             }
+            catch (SqlException e)
+            {
+                FirtReport = null;
+            }
+
             return FirtReport;
         }
 
@@ -209,14 +218,14 @@ namespace Conexion
                     conrep.ContactoTerceroRelacionado = Convert.ToInt32(rdr["ContTercRelacionado"].ToString());
 
                     //FALTAN COLOCAR COLUMNAS TOTALES
-                    //if (conrep.Fecha.Contains("01"))
-                    //{
-                    //    conrep.RecorridoAcumulado = conrep.RecorridoUnico;
-                    //}
-                    //else
-                    //{
-                    //    conrep.RecorridoAcumulado = conrep.RecorridoUnico + conrep.RecorridoAcumulado;
-                    //}
+                    if (conrep.Fecha.Contains("1/"))
+                    {
+                        conrep.RecorridoAcumulado = conrep.RecorridoUnico;
+                    }
+                    else
+                    {
+                        conrep.RecorridoAcumulado = conrep.RecorridoUnico + conrep.RecorridoAcumulado;
+                    }
 
                     if (conrep.RecorridoReal != 0)
                     {

@@ -1,0 +1,48 @@
+﻿@using Entidades
+@model beConsultaReportePrincipal
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Breadcrumbs-->
+<div>
+    @Html.Partial("../ConsultaReporte/GeneralFiltroPartial")
+</div>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        @*<a href="#">Dashboard</a>*@
+        Resumen
+    </li>
+    @*<li class="breadcrumb-item active">Tables</li>*@
+    <li class="breadcrumb-item active">Mes</li>
+</ol>
+<!-- DataTables Example -->
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Operación del mes - Campaña Crediscotia TC
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            @Html.Partial("ResumenMesFirstPartial", Model)
+        </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+</div>
+<br />
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Operación del mes a detalle - Campaña Crediscotia TC
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            @Html.Partial("ResumenMesSecondPartial", Model)
+        </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+</div>
+<script src="~/Assets/vendor/jquery/jquery.min.js"></script>
+<script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="~/Assets/ScriptReports/report_11A.js"></script>
+<script src="~/Assets/ScriptReports/report_11B.js"></script>

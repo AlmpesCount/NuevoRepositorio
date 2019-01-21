@@ -98,24 +98,7 @@ namespace Conexion
 
                     if(Data.TablaID == 10)
                     {
-                        beConsultaReporte conrep = new beConsultaReporte();
-                        conrep.PeriodoOrd = rdr["PeriodoOrd"].ToString();
-                        conrep.Periodo = rdr["Periodo"].ToString();
-                        conrep.Mes = rdr["Mes"].ToString();
-                        conrep.Anio = rdr["Año"].ToString();
-                        conrep.VentaTotal = Convert.ToInt32(rdr["1.Venta Total"].ToString());
-                        conrep.VentaValida = Convert.ToInt32(rdr["2.Venta Valida"].ToString());
-                        conrep.VentaAprobada = Convert.ToInt32(rdr["3.Venta Aprobada"].ToString());
-                        conrep.VentaActivada = Convert.ToInt32(rdr["4.Venta Activada"].ToString());
-                        conrep.ActivadaMes = Convert.ToInt32(rdr["5.Activadas del Mes"].ToString());
-                        conrep.ActivasMes0 = Convert.ToInt32(rdr["6.Activadas Mes0"].ToString());
-                        conrep.ActivadasMes1 = Convert.ToInt32(rdr["7.Activadas Mes1"].ToString());
-                        conrep.ActivadasMes2 = Convert.ToInt32(rdr["8.Activadas Mes2"].ToString());
-                        conrep.Uso = Convert.ToInt32(rdr["9.Uso"].ToString());
-                        conrep.TotalGeneral =   conrep.VentaTotal + conrep.VentaAprobada +
-                                                conrep.VentaActivada + conrep.ActivadaMes;
-
-                        lstReporte.Add(conrep);
+                        
                     }
 
                     if (Data.TablaID == 12)
@@ -318,33 +301,33 @@ namespace Conexion
         //    return DataReporte;
         //}
 
-        public List<beConsultaReporte> MostrarConsulta()
-        {
-            List<beConsultaReporte> lstConsulta = new List<beConsultaReporte>();
+        //public List<beConsultaReporte> MostrarConsulta()
+        //{
+        //    List<beConsultaReporte> lstConsulta = new List<beConsultaReporte>();
 
-            using (SqlConnection con = Conexion.ConexionSql)
-            {
-                SqlCommand cmd = new SqlCommand("WEB_SITE_Data_Prueba_10", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                con.Open();
-                SqlDataReader rdr = cmd.ExecuteReader();
+        //    using (SqlConnection con = Conexion.ConexionSql)
+        //    {
+        //        SqlCommand cmd = new SqlCommand("WEB_SITE_Data_Prueba_10", con);
+        //        cmd.CommandType = CommandType.StoredProcedure;
+        //        con.Open();
+        //        SqlDataReader rdr = cmd.ExecuteReader();
 
-                while (rdr.Read())
-                {
-                    beConsultaReporte conrep = new beConsultaReporte();
+        //        while (rdr.Read())
+        //        {
+        //            beConsultaReporte conrep = new beConsultaReporte();
 
-                    conrep.PeriodoOrd = rdr["PeriodoOrd"].ToString();
-                    conrep.Periodo = rdr["Periodo"].ToString();
-                    conrep.VentaTotal = Convert.ToInt32(rdr["1.Venta Total"].ToString());
-                    conrep.VentaAprobada = Convert.ToInt32(rdr["3.Venta Aprobada"].ToString());
-                    conrep.VentaActivada = Convert.ToInt32(rdr["4.Venta Activada"].ToString());
-                    conrep.ActivadaMes = Convert.ToInt32(rdr["5.Activadas del Mes"].ToString());
+        //            conrep.PeriodoOrd = rdr["PeriodoOrd"].ToString();
+        //            conrep.Periodo = rdr["Periodo"].ToString();
+        //            conrep.VentaTotal = Convert.ToInt32(rdr["1.Venta Total"].ToString());
+        //            conrep.VentaAprobada = Convert.ToInt32(rdr["3.Venta Aprobada"].ToString());
+        //            conrep.VentaActivada = Convert.ToInt32(rdr["4.Venta Activada"].ToString());
+        //            conrep.ActivadaMes = Convert.ToInt32(rdr["5.Activadas del Mes"].ToString());
 
-                    lstConsulta.Add(conrep);
-                }
-                con.Close();
-            }
-            return lstConsulta;
-        }
+        //            lstConsulta.Add(conrep);
+        //        }
+        //        con.Close();
+        //    }
+        //    return lstConsulta;
+        //}
     }
 }

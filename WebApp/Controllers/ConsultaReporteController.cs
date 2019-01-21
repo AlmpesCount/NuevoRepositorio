@@ -13,8 +13,8 @@ namespace WebApp.Controllers
     public class ConsultaReporteController : Controller
     {
         brConsultaReporte consulta = new brConsultaReporte();
-        brModelReport model = new brModelReport();
-        brModelSummary summary = new brModelSummary();
+        brModelBasedeDatos model = new brModelBasedeDatos();
+        brModelResumen summary = new brModelResumen();
 
         static List<Object> lstReporte = new List<Object>();
 
@@ -32,8 +32,8 @@ namespace WebApp.Controllers
 
         #region Listas Reporte Resumen
 
-        static List<beReporte11> FirstSummaryMonth = new List<beReporte11>();
-        static List<beReporte11> SecondSummaryMonth = new List<beReporte11>();
+        static List<beResumenMes> FirstSummaryMonth = new List<beResumenMes>();
+        static List<beResumenMes> SecondSummaryMonth = new List<beResumenMes>();
 
         #endregion
 
@@ -56,7 +56,7 @@ namespace WebApp.Controllers
                 SecondDay = model.Second_ModelDBDay(Reporte);
                 ThirdDay = model.Third_ModelDBDay(Reporte);
 
-                return RedirectToAction("Reporte1", "ConsultaReporte");
+                return RedirectToAction("Reporte1", "DataBase");
             }
 
             if (Reporte.TablaID == 8)
@@ -66,7 +66,7 @@ namespace WebApp.Controllers
                 SecondPhone = model.Second_ModelDBPhone(Reporte);
                 ThirdPhone = model.Third_ModelDBPhone(Reporte);
 
-                return RedirectToAction("Reporte8", "ConsultaReporte");
+                return RedirectToAction("Reporte8", "DataBase");
             }
 
             if (Reporte.TablaID == 9)
@@ -74,7 +74,7 @@ namespace WebApp.Controllers
                 //Esta lista sirve para llenar Vista Reporte9
                 FirstCET = model.ModelDBCET(Reporte);
 
-                return RedirectToAction("Reporte9", "ConsultaReporte");
+                return RedirectToAction("Reporte9", "DataBase");
             }
 
             //Aqui terminan Consulta Reporte Base de Datos
@@ -87,7 +87,7 @@ namespace WebApp.Controllers
             {
                 lstReporte = consulta.TotalTabla(Reporte);
 
-                return RedirectToAction("Reporte10", "ConsultaReporte");
+                return RedirectToAction("Reporte10", "Summary");
             }
 
             if (Reporte.TablaID == 11)
@@ -95,7 +95,7 @@ namespace WebApp.Controllers
                 FirstSummaryMonth = summary.First_SummaryMonth(Reporte);
                 SecondSummaryMonth= summary.Second_SummaryMonth(Reporte);
 
-                return RedirectToAction("Reporte11", "ConsultaReporte");
+                return RedirectToAction("Reporte11", "Summary");
             }
 
             //Aqui terminan Consulta Reporte Resumen
@@ -155,65 +155,65 @@ namespace WebApp.Controllers
         #region Vistas Base de Datos
 
         //Aqui se Inician las Vistas Base de Datos
-        public ActionResult Reporte1()
-        {
-            return View();
-        }
+        //public ActionResult Reporte1()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult CargarReporte1()
-        {
-            return Json(new { data = FirstDay }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult CargarReporte1()
+        //{
+        //    return Json(new { data = FirstDay }, JsonRequestBehavior.AllowGet);
+        //}
 
-        public ActionResult Reporte2()
-        {
-            return View();
-        }
+        //public ActionResult Reporte2()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult CargarReporte2()
-        {
-            return Json(new { data = SecondDay }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult CargarReporte2()
+        //{
+        //    return Json(new { data = SecondDay }, JsonRequestBehavior.AllowGet);
+        //}
 
-        public ActionResult Reporte8()
-        {
-            return View();
-        }
+        //public ActionResult Reporte8()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult FirstReport8()
-        {
-            return Json(new { data = FirstPhone }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult FirstReport8()
+        //{
+        //    return Json(new { data = FirstPhone }, JsonRequestBehavior.AllowGet);
+        //}
 
-        public ActionResult SecondReport8()
-        {
-            return Json(new { data = SecondPhone }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult SecondReport8()
+        //{
+        //    return Json(new { data = SecondPhone }, JsonRequestBehavior.AllowGet);
+        //}
 
-        public ActionResult ThirdReport8()
-        {
-            return Json(new { data = ThirdPhone }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult ThirdReport8()
+        //{
+        //    return Json(new { data = ThirdPhone }, JsonRequestBehavior.AllowGet);
+        //}
 
-        public ActionResult Reporte9()
-        {
-            return View();
-        }
+        //public ActionResult Reporte9()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult CargarReporte9()
-        {
-            return Json(new { data = FirstCET }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult CargarReporte9()
+        //{
+        //    return Json(new { data = FirstCET }, JsonRequestBehavior.AllowGet);
+        //}
 
-        public ActionResult Reporte25()
-        {
-            return View();
-        }
+        //public ActionResult Reporte25()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult CargarReporte25()
-        {
-            return Json(new { data = ThirdDay }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult CargarReporte25()
+        //{
+        //    return Json(new { data = ThirdDay }, JsonRequestBehavior.AllowGet);
+        //}
 
         //Aqui se Terminan las Vistas Base de Datos
         #endregion
@@ -221,30 +221,30 @@ namespace WebApp.Controllers
         #region Vistas Resumen
 
         //Aqui se Inician las Vistas Resumen
-        public ActionResult Reporte10()
-        {
-            return View();
-        }
+        //public ActionResult Reporte10()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult CargarReporte10()
-        {
-            return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult CargarReporte10()
+        //{
+        //    return Json(new { data = lstReporte }, JsonRequestBehavior.AllowGet);
+        //}
 
-        public ActionResult Reporte11()
-        {
-            return View();
-        }
+        //public ActionResult Reporte11()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult FirstMonth()
-        {
-            return Json(new { data = FirstSummaryMonth }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult FirstMonth()
+        //{
+        //    return Json(new { data = FirstSummaryMonth }, JsonRequestBehavior.AllowGet);
+        //}
 
-        public ActionResult SecondMonth()
-        {
-            return Json(new { data = SecondSummaryMonth }, JsonRequestBehavior.AllowGet);
-        }
+        //public ActionResult SecondMonth()
+        //{
+        //    return Json(new { data = SecondSummaryMonth }, JsonRequestBehavior.AllowGet);
+        //}
 
         //Aqui terminan Vistas Resumen
         #endregion

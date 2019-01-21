@@ -17,13 +17,13 @@ namespace WebApp.Controllers
             return View();
         }
 
-        public JsonResult CargarChartArea()
-        {
-            List<beConsultaReporte> lstReporte = new List<beConsultaReporte>();
-            brConsultaReporte reporte = new brConsultaReporte();
-            lstReporte = reporte.MostrarConsulta().ToList();
+        //public JsonResult CargarChartArea()
+        //{
+        //    List<beConsultaReporte> lstReporte = new List<beConsultaReporte>();
+        //    brConsultaReporte reporte = new brConsultaReporte();
+        //    lstReporte = reporte.MostrarConsulta().ToList();
 
-            return Json(lstReporte, JsonRequestBehavior.AllowGet);
-        }
+        //    return Json(lstReporte, JsonRequestBehavior.AllowGet);
+        //}
 	}
 }

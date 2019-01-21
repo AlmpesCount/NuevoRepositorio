@@ -12,7 +12,7 @@ namespace Logica
     public class brConsultaReporte
     {
         daConsultaReporte reporte = new daConsultaReporte();
-        daModelReport model = new daModelReport();
+        daModelBasedeDatos model = new daModelBasedeDatos();
 
         public List<Object> TotalTabla(beConsultaReportePrincipal Data)
         {
@@ -20,11 +20,11 @@ namespace Logica
             return lista;
         }
 
-        public List<beConsultaReporte> MostrarConsulta()
-        {
-            var lista = reporte.MostrarConsulta();
-            return lista;
-        }
+        //public List<beConsultaReporte> MostrarConsulta()
+        //{
+        //    var lista = reporte.MostrarConsulta();
+        //    return lista;
+        //}
 
         //public DataTable MostrarTablaConsulta(beConsultaReportePrincipal Data)
         //{

@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Breadcrumbs-->
+<div>
+    @Html.Partial("../ConsultaReporte/GeneralFiltroPartial")
+</div>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+    </li>
+    <li class="breadcrumb-item active">Tables</li>
+</ol>
+<!-- DataTables Example -->
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Resumen Evolutivo
+    </div>
+    <div class="card-body">
+        <div id="gvLista" class="table-responsive">
+            @Html.Partial("ResumenEvolutivoPartial")
+        </div>
+    </div>
+</div>
+<script src="~/Assets/vendor/jquery/jquery.min.js"></script>
+<script src="~/Assets/vendor/datatables/jquery.dataTables.min.js"></script>
+@*Este script sirve para la tabla myTable. Crea la tabla.*@
+<script src="~/Assets/ScriptReports/report_10A.js"></script>
+@*Este script sirve para la tabla SecondTable. Crear la tabla y suma de sus columnas*@
+<script src="~/Assets/ScriptReports/Resumen/ResumenEvolutivo.js"></script>
+
+<script type="text/javascript">
+    function getLista(data, textStatus, xhr) {
+        if (textStatus == 'success') {
+            var c = xhr.getResponseHeader('resultado');
+            if (c == '200') {
+                $("#gvLista").empty().show().html(data);
+            }
+        }
+    }
+</script>

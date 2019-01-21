@@ -50,6 +50,7 @@
     <Compile Include="beEquipo.cs" />
     <Compile Include="beHeadPhone.cs" />
     <Compile Include="beLogin.cs" />
+    <Compile Include="beResumen.cs" />
     <Compile Include="beUserCRM.cs" />
     <Compile Include="beUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="Assets\css\agency.css" />
     <Content Include="Assets\css\agency.min.css" />
+    <Content Include="Assets\css\estilos.css" />
     <Content Include="Assets\css\sb-admin.css" />
     <Content Include="Assets\css\sb-admin.min.css" />
     <Content Include="Assets\DatePicker\jquery-ui.min.css" />
@@ -263,16 +264,16 @@
     <Content Include="Assets\js\Tables\sb-admin.min.js" />
     <Content Include="Assets\mail\contact_me.php" />
     <Content Include="Assets\ScriptReports\report_1.js" />
-    <Content Include="Assets\ScriptReports\report_10A.js" />
-    <Content Include="Assets\ScriptReports\reporte10B.js" />
-    <Content Include="Assets\ScriptReports\report_11A.js" />
-    <Content Include="Assets\ScriptReports\report_11B.js" />
+    <Content Include="Assets\ScriptReports\Resumen\report_10A.js" />
+    <Content Include="Assets\ScriptReports\Resumen\report_11A.js" />
+    <Content Include="Assets\ScriptReports\Resumen\report_11B.js" />
     <Content Include="Assets\ScriptReports\report_2.js" />
     <Content Include="Assets\ScriptReports\report_25.js" />
     <Content Include="Assets\ScriptReports\report_8A.js" />
     <Content Include="Assets\ScriptReports\report_8B.js" />
     <Content Include="Assets\ScriptReports\report_8C.js" />
     <Content Include="Assets\ScriptReports\report_9.js" />
+    <Content Include="Assets\ScriptReports\Resumen\ResumenEvolutivo.js" />
     <Content Include="Assets\scss\agency.scss" />
     <Content Include="Assets\scss\_contact.scss" />
     <Content Include="Assets\scss\_footer.scss" />
@@ -1886,10 +1887,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ChartsController.cs" />
     <Compile Include="Controllers\ConsultaReporteController.cs" />
+    <Compile Include="Controllers\DataBaseController.cs" />
     <Compile Include="Controllers\EquipoController.cs" />
     <Compile Include="Controllers\HeadPhoneController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PaginaPrincipalController.cs" />
+    <Compile Include="Controllers\ResumenController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1907,15 +1910,14 @@
     <Content Include="Views\HeadPhone\MostrarHead.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte10.cshtml" />
     <Content Include="Views\PaginaPrincipal\PaginaPrincipal.cshtml" />
-    <Content Include="Views\ConsultaReporte\ConsultaReportePartial.cshtml" />
-    <Content Include="Views\ConsultaReporte\ConsultaReportePrincipal.cshtml" />
+    <Content Include="Views\ConsultaReporte\GeneralFiltroPartial.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte29.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte28.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte27.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte1.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte2.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte9.cshtml" />
-    <Content Include="Views\ConsultaReporte\Reporte11.cshtml" />
+    <Content Include="Views\Resumen\ResumenMes.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte12.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte13.cshtml" />
     <Content Include="Views\Charts\ChartsView.cshtml" />
@@ -1929,6 +1931,13 @@
     <Content Include="Views\ConsultaReporte\Reporte5.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte7.cshtml" />
     <Content Include="Views\ConsultaReporte\Reporte8.cshtml" />
+    <Content Include="Views\DataBase\Reporte1.cshtml" />
+    <Content Include="Views\DataBase\Reporte2.cshtml" />
+    <Content Include="Views\DataBase\Reporte25.cshtml" />
+    <Content Include="Views\Resumen\ResumenEvolutivo.cshtml" />
+    <Content Include="Views\Resumen\ResumenMesFirstPartial.cshtml" />
+    <Content Include="Views\Resumen\ResumenMesSecondPartial.cshtml" />
+    <Content Include="Views\Resumen\ResumenEvolutivoPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

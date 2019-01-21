@@ -1,18 +1,22 @@
 ﻿$(document).ready(function () {
-    $('#SecondTable').DataTable({
+    $('#FirstTable').DataTable({
+        "scrollY": 250,
+        "scrollX": true,
         "ajax": {
-            "url": "/consultareporte/SecondMonth",
+            "url": "/summary/FirstMonth",
             "type": "GET",
             "datatype": "json"
         },
         "columns": [
-            { "data": "Promotor", "autoWidth": true },
-            { "data": "Supervisor", "autoWidth": true },
+            { "data": "Dia", "autoWidth": true },
             { "data": "VentaTotal", "autoWidth": true },
             { "data": "VentaValida", "autoWidth": true },
             { "data": "VentaAprobada", "autoWidth": true },
             { "data": "PassingValido", "autoWidth": true },
-            { "data": "PassingAprobado", "autoWidth": true }
+            { "data": "PassingAprobado", "autoWidth": true },
+            { "data": "Venta", "autoWidth": true },
+            { "data": "Validado", "autoWidth": true },
+            { "data": "Aprobado", "autoWidth": true }
         ],
         "language": {
             "sProcessing": "Procesando...",
@@ -36,27 +40,9 @@
             "oAria": {
                 "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
                 "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-            }
-        },
-        initComplete: function () {
-            this.api().column(1).every(function () {
-                var column = this;
-                var select = $('<select style=" width: 105px;"><option value=""></option></select>')
-                    .appendTo($(column.footer()).empty())
-                    .on('change', function () {
-                        var val = $.fn.dataTable.util.escapeRegex(
-                            $(this).val()
-                        );
-
-                        column
-                            .search(val ? '^' + val + '$' : '', true, false)
-                            .draw();
-                    });
-
-                column.data().unique().sort().each(function (d, j) {
-                    select.append('<option value="' + d + '">' + d + '</option>')
-                });
-            });
+            },
+            "decimal": ",",
+            "thousands": ","
         },
         "footerCallback": function (row, data, start, end, display) {
             var api = this.api(), data;
@@ -71,42 +57,72 @@
 
             // Total over this page
             VentaTotal = api
-                .column(2, { page: 'current' })
+                .column(1, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
 
             VentaValida = api
-                .column(3, { page: 'current' })
+                .column(2, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
 
             VentaAprobada = api
-                .column(4, { page: 'current' })
+                .column(3, { page: 'current' })
+                .data()
+                .reduce(function (a, b) {
+                    return intVal(a) + intVal(b);
+                }, 0);
+
+            Venta = api
+                .column(6, { page: 'current' })
+                .data()
+                .reduce(function (a, b) {
+                    return intVal(a) + intVal(b);
+                }, 0);
+
+            Valido = api
+                .column(7, { page: 'current' })
+                .data()
+                .reduce(function (a, b) {
+                    return intVal(a) + intVal(b);
+                }, 0);
+
+            Aprobado = api
+                .column(8, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
 
             // Update footer
-            $(api.column(2).footer()).html(
+            $(api.column(1).footer()).html(
                VentaTotal
             );
-            $(api.column(3).footer()).html(
+            $(api.column(2).footer()).html(
                VentaValida
             );
-            $(api.column(4).footer()).html(
+            $(api.column(3).footer()).html(
                VentaAprobada
             );
-            $(api.column(5).footer()).html(
+            $(api.column(4).footer()).html(
                ((VentaValida / VentaTotal) * 100).toFixed(0) + '%'
             );
-            $(api.column(6).footer()).html(
+            $(api.column(5).footer()).html(
                ((VentaAprobada / VentaValida) * 100).toFixed(0) + '%'
             );
-        }
+            $(api.column(6).footer()).html(
+               Venta.toFixed(0) + '%'
+            );
+            $(api.column(7).footer()).html(
+               Valido.toFixed(0) + '%'
+            );
+            $(api.column(8).footer()).html(
+               Aprobado.toFixed(0) + '%'
+            );
+        },
     });
 });

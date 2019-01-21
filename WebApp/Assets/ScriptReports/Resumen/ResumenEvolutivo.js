@@ -1,31 +1,24 @@
 ﻿$(document).ready(function () {
     $('#SecondTable').DataTable({
-        "scrollY": 350,
-        "scrollX": true,
         "ajax": {
-            "url": "/database/CargarReporte2",
-            "type": "GET",
+            "url": "/Resumen/cargarreporte10",
+            "type": "POST",
             "datatype": "json"
         },
         "columns": [
-            { "data": "Zona", "autoWidth": true },
-            { "data": "FRecep", "autoWidth": true },
-            { "data": "NroVenta", "autoWidth": true },
-            { "data": "NroVenValida", "autoWidth": true },
-            { "data": "BBDD", "autoWidth": true },
-            { "data": "Indecopi", "autoWidth": true },
-            { "data": "RetiroLead", "autoWidth": true },
-            { "data": "RecorridoReal", "autoWidth": true },
-            { "data": "CETReal", "autoWidth": true },
-            { "data": "NroVuelta", "autoWidth": true },
-            { "data": "PorcCET", "autoWidth": true },
-            { "data": "PorcAceptacion", "autoWidth": true },
-            { "data": "AvancePorc", "autoWidth": true },
-            { "data": "PorcEfectividad", "autoWidth": true },
-            { "data": "Recorrido", "autoWidth": true },
-            { "data": "CET", "autoWidth": true },
-            { "data": "CETVueltas", "autoWidth": true }
+            { "data": "Mes", "autoWidth": true },
+            { "data": "Anio", "autoWidth": true },
+            { "data": "VentaTotal", "autoWidth": true },
+            { "data": "VentaValida", "autoWidth": true },
+            { "data": "VentaAprobada", "autoWidth": true },
+            { "data": "VentaActivada", "autoWidth": true },
+            { "data": "ActivadaMes", "autoWidth": true },
+            { "data": "ActivasMes0", "autoWidth": true },
+            { "data": "ActivadasMes1", "autoWidth": true },
+            { "data": "ActivadasMes2", "autoWidth": true },
+            { "data": "Uso", "autoWidth": true }
         ],
+        //Esta parte del codigo sirve para pasar datos de la tabla a español
         "language": {
             "sProcessing": "Procesando...",
             "sLengthMenu": "Mostrar _MENU_ registros",
@@ -35,7 +28,7 @@
             "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
             "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
             "sInfoPostFix": "",
-            "sSearch": "Buscar:",
+            "sSearch": "Ingrese año a buscar:",
             "sUrl": "",
             "sInfoThousands": ",",
             "sLoadingRecords": "Cargando...",
@@ -62,56 +55,80 @@
                     i : 0;
             };
 
+            // Total over all pages
+            total = api
+                .column(2)
+                .column(3)
+                .column(4)
+                .column(5)
+                .column(6)
+                .column(7)
+                .column(8)
+                .column(9)
+                .column(10)
+                .data()
+                .reduce(function (a, b) {
+                    return intVal(a) + intVal(b);
+                }, 0);
+
+
             // Total over this page
-            NVenta = api
+            VentaTotal = api
                 .column(2, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
 
-            NVenValida = api
+            VentaValida = api
                 .column(3, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
 
-            BBDD = api
+            VentaAprobada = api
                 .column(4, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
-            Indecopi = api
+            VentaActivada = api
                 .column(5, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
 
-            RetiroLead = api
+            ActivadaMes = api
                 .column(6, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
 
-            RecorridoReal = api
+            ActivadasMes0 = api
                 .column(7, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
-            CETReal = api
+            ActivadasMes1 = api
                 .column(8, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
                 }, 0);
 
-            NVueltas = api
+            ActivadasMes2 = api
                 .column(9, { page: 'current' })
+                .data()
+                .reduce(function (a, b) {
+                    return intVal(a) + intVal(b);
+                }, 0);
+
+            Uso = api
+                .column(10, { page: 'current' })
                 .data()
                 .reduce(function (a, b) {
                     return intVal(a) + intVal(b);
@@ -119,41 +136,51 @@
 
             // Update footer
             $(api.column(2).footer()).html(
-               NVenta
+               VentaTotal
             );
             $(api.column(3).footer()).html(
-               NVenValida
+               VentaValida
             );
             $(api.column(4).footer()).html(
-               BBDD
+               VentaAprobada
             );
             $(api.column(5).footer()).html(
-               Indecopi
+               VentaActivada
             );
             $(api.column(6).footer()).html(
-               RetiroLead
+               ActivadaMes
             );
             $(api.column(7).footer()).html(
-               RecorridoReal
+               ActivadasMes0
             );
             $(api.column(8).footer()).html(
-               CETReal
+               ActivadasMes1
             );
             $(api.column(9).footer()).html(
-               NVueltas.toFixed(0)
+               ActivadasMes2
             );
             $(api.column(10).footer()).html(
-               ((CETReal / RecorridoReal) * 100).toFixed(0) + '%'
+               Uso
             );
-            $(api.column(11).footer()).html(
-               ((NVenta / CETReal) * 100).toFixed(1) + '%'
-            );
-            $(api.column(12).footer()).html(
-               ((BBDD / (RecorridoReal - Indecopi)) * 100).toFixed(1) + '%'
-            );
-            $(api.column(13).footer()).html(
-               ((NVenta / CETReal) * 100).toFixed(1) + '%'
-            );
-        }
+        },
     });
+
+    //$('#SecondTable tfoot th').each(function () {
+    //       var title = $(this).text();
+    //       $(this).html('<input type="text" placeholder="Buscar ' + title + '" style="width:150px;"/>');
+    //   });
+
+    //var table = $('#SecondTable').DataTable();
+
+    //   table.columns().every(function () {
+    //       var that = this;
+
+    //       $('input', this.footer()).on('keyup change', function () {
+    //           if (that.search() !== this.value) {
+    //               that
+    //                   .search(this.value)
+    //                   .draw();
+    //           }
+    //       });
+    //   });
 });

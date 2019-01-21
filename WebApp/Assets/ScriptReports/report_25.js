@@ -3,7 +3,7 @@
             "scrollY": 350,
             "scrollX": true,
             "ajax": {
-                "url": "/consultareporte/cargarreporte25",
+                "url": "/database/cargarreporte25",
                 "type": "GET",
                 "datatype": "json"
             },

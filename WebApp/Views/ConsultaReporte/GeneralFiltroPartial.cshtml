@@ -1,0 +1,43 @@
+﻿@using Entidades
+@model beConsultaReportePrincipal
+
+
+@using (Ajax.BeginForm("ResumenEvolutivoPartial", "Resumen", new AjaxOptions()
+        {
+            HttpMethod = "POST",
+            OnBegin = "loading('gvLista');",
+            OnSuccess = "getLista",
+            InsertionMode = InsertionMode.Replace
+        }))
+{
+    <table style="width: 100%; text-align: center; margin-bottom: 50px;">
+        <tr>
+            <td style="width: 75px; margin-top: auto;">@Html.LabelFor(model => model.FechaInicio)</td>
+            <td style="width: 75px;">@Html.EditorFor(model => model.FechaInicio, new { htmlAttributes = new { @class = "datepicker" } })</td>
+            <td style="width: 75px;">@Html.LabelFor(model => model.FechaFin)</td>
+            <td style="width: 75px;">@Html.EditorFor(model => model.FechaFin, new { htmlAttributes = new { @class = "datepicker" } })</td>
+            <td style="width: 75px;"><input type="submit" value="Ingresar" class="btn btn-danger" style="text-align: center;"/></td>
+        </tr>
+    </table>
+}
+
+
+
+<script type="text/javascript">
+    $(function () {
+        $(".datepicker").datepicker({
+            dateFormat: "dd-mm-yy",
+            changeMonth: true,
+            changeYear: true,
+            minDate: new Date(2017, 0, 1),
+            maxDate: new Date(2018, 0, 1),
+            showOn: "both",
+            buttonText: "<i class='fa fa-calendar'></i>"
+        });
+    });
+
+    $(document).ready(function () {
+        $(".filterItem").selectpicker();
+    });
+</script>
+

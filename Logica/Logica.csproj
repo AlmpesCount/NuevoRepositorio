@@ -43,8 +43,8 @@
     <Compile Include="brEquipo.cs" />
     <Compile Include="brHeadPhone.cs" />
     <Compile Include="brLogin.cs" />
-    <Compile Include="brModelReport.cs" />
-    <Compile Include="brModelSummary.cs" />
+    <Compile Include="brModelBasedeDatos.cs" />
+    <Compile Include="brModelResumen.cs" />
     <Compile Include="brUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
